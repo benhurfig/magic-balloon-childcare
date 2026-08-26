@@ -87,8 +87,10 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Visual direction uses a light cloud-white background, navy typography, restrained brand-color details, organic image framing, and subtle CSS cloud shapes.
 - Responsive review completed at 375px, 430px, 700px, 980px, and 1440px with no horizontal overflow or browser console errors.
 - Files updated in this phase: `en/index.html`, `pt/index.html`, `es/index.html`, `assets/css/header.css`, `assets/css/hero.css`, `assets/js/main.js`, and `PROJECT-STATUS.md`.
-- Balloon intro overlay added to all three language pages using the existing lightweight `magic-ballon-favicon.png` asset. The 1.5-second CSS animation runs over normally rendered content and the overlay is removed from the DOM after 1.55 seconds.
-- Reduced-motion visitors receive an effectively immediate transition and DOM removal after 120ms.
+- Balloon intro overlay added to all three language pages using the existing lightweight `magic-ballon-favicon.png` asset. The balloon was enlarged by approximately 70%, reaching about 208px at 375px, 239px at 430px, and 264px from tablet through desktop.
+- The branded intro now includes localized copy: “Welcome to”, “Bem-vindo à”, or “Bienvenido a”, followed by “Magic Ballon Childcare”.
+- The intro sequence lasts approximately 3.5 seconds: balloon rise, copy fade-in, brief hold, and overlay fade-out. The overlay is removed from the DOM after 3.6 seconds.
+- Reduced-motion visitors receive no rise animation, a short 240ms composition fade, and DOM removal after 280ms.
 - Hero eyebrow updated from a decorative line to a reusable `section-eyebrow` component with the balloon icon and four simple color modifiers.
 - Files added for this enhancement: `assets/css/loader.css` and `assets/js/loader.js`. Updated: `assets/css/style.css`, `assets/css/hero.css`, `en/index.html`, `pt/index.html`, `es/index.html`, and `PROJECT-STATUS.md`.
 - Bulletin, About, Programs, Reviews, FAQ, Local SEO, and Final CTA remain pending and were not changed in this enhancement.
