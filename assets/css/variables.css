@@ -1,0 +1,33 @@
+:root {
+  --color-navy: #1f2a44;
+  --color-pink: #ff5c8a;
+  --color-yellow: #ffc845;
+  --color-turquoise: #2fb9b1;
+  --color-purple: #7b61ff;
+  --color-light-blue: #b8e3ff;
+  --color-cloud-white: #f7f9fc;
+
+  --color-text-primary: var(--color-navy);
+  --color-text-secondary: #586178;
+  --color-background: #ffffff;
+  --color-border: #dce3ec;
+
+  --font-heading: "Fredoka", "Trebuchet MS", sans-serif;
+  --font-body: "Poppins", "Avenir Next", Arial, sans-serif;
+
+  --radius-small: 0.75rem;
+  --radius-medium: 1.25rem;
+  --radius-pill: 999px;
+  --shadow-small: 0 0.5rem 1.5rem rgb(31 42 68 / 8%);
+  --shadow-large: 0 1.25rem 3rem rgb(31 42 68 / 16%);
+
+  --container-width: 75rem;
+  --section-spacing: clamp(4rem, 9vw, 7rem);
+  --transition-fast: 180ms ease;
+  --header-height: 4.75rem;
+
+  --z-header: 1000;
+  --z-overlay: 900;
+  --z-floating: 1100;
+  --z-consent: 1200;
+}

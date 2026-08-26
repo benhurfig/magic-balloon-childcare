@@ -1,0 +1,16 @@
+{
+  "name": "Magic Ballon Childcare",
+  "short_name": "Magic Ballon",
+  "start_url": "/en/",
+  "display": "standalone",
+  "background_color": "#F7F9FC",
+  "theme_color": "#1F2A44",
+  "icons": [
+    {
+      "src": "/assets/images/%20Paletas%20Visual/magic-ballon-favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
