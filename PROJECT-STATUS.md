@@ -12,7 +12,7 @@ Magic Ballon Childcare
 
 ## CURRENT PHASE
 
-Technical foundation
+Header and Hero complete
 
 ## ARCHITECTURE
 
@@ -62,7 +62,6 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - GA4 Measurement ID (`G-XXXXXXXXXX` is intentionally inactive).
 - Family Request URL.
 - Final page content and final SEO copy.
-- Header and Hero visual review.
 - Bulletin, About, Programs, Reviews, FAQ, Local SEO, and Final CTA content.
 - Legal copy and localized legal-page architecture.
 - Local SEO pages and reviews.
@@ -83,7 +82,12 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Central configuration and generic consent-gated analytics events.
 - Canonical, hreflang, Open Graph, X card, favicon, manifest, robots, sitemap, and redirect foundations.
 - Minimal legal-page placeholders without invented legal copy.
+- Header completed in all three languages with horizontal logo, desktop navigation, real-language dropdown, desktop CTA, and accessible mobile drawer with its own CTA.
+- Hero completed in all three languages with approved copy, responsive text-first layout, trust line, CTAs, and the existing `assets/images/hero/hero.jpg` image.
+- Visual direction uses a light cloud-white background, navy typography, restrained brand-color details, organic image framing, and subtle CSS cloud shapes.
+- Responsive review completed at 375px, 430px, 700px, 980px, and 1440px with no horizontal overflow or browser console errors.
+- Files updated in this phase: `en/index.html`, `pt/index.html`, `es/index.html`, `assets/css/header.css`, `assets/css/hero.css`, `assets/js/main.js`, and `PROJECT-STATUS.md`.
 
 ## NEXT STEP
 
-`Build and review Header + Hero`
+`Build Monthly Bulletin / Now Enrolling section`

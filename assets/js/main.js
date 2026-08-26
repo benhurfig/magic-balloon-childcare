@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     menuButton.classList.remove("is-open");
     menuOverlay.classList.remove("is-visible");
     menuButton.setAttribute("aria-expanded", "false");
+    menuButton.setAttribute("aria-label", menuButton.dataset.menuOpenLabel || "Open navigation menu");
     menuOverlay.setAttribute("aria-hidden", "true");
     body.classList.remove("no-scroll");
     if (wasOpen && restoreFocus) menuReturnFocus?.focus();
@@ -33,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     menuButton.classList.add("is-open");
     menuOverlay.classList.add("is-visible");
     menuButton.setAttribute("aria-expanded", "true");
+    menuButton.setAttribute("aria-label", menuButton.dataset.menuCloseLabel || "Close navigation menu");
     menuOverlay.setAttribute("aria-hidden", "false");
     body.classList.add("no-scroll");
     navigation.querySelector("a")?.focus();
