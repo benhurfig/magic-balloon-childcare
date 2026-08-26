@@ -91,6 +91,7 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - The branded intro now includes localized copy: “Welcome to”, “Bem-vindo à”, or “Bienvenido a”, followed by “Magic Ballon Childcare”.
 - The intro sequence lasts approximately 3.5 seconds: balloon rise, copy fade-in, brief hold, and overlay fade-out. The overlay is removed from the DOM after 3.6 seconds.
 - Reduced-motion visitors receive no rise animation, a short 240ms composition fade, and DOM removal after 280ms.
+- Intro refinement: desktop balloon increased by a further 20% to approximately 317px during its final animation state, while mobile sizing remains unchanged. The company name now follows the approved logo palette, with navy supporting words and multicolor “Ballon” lettering.
 - Hero eyebrow updated from a decorative line to a reusable `section-eyebrow` component with the balloon icon and four simple color modifiers.
 - Files added for this enhancement: `assets/css/loader.css` and `assets/js/loader.js`. Updated: `assets/css/style.css`, `assets/css/hero.css`, `en/index.html`, `pt/index.html`, `es/index.html`, and `PROJECT-STATUS.md`.
 - Bulletin, About, Programs, Reviews, FAQ, Local SEO, and Final CTA remain pending and were not changed in this enhancement.

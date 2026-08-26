@@ -45,10 +45,47 @@
 }
 
 .site-intro__name {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 0.28em;
   font-size: clamp(1.55rem, 6vw, 2.25rem);
   font-weight: 700;
   line-height: 1.2;
   text-wrap: balance;
+}
+
+.site-intro__brand-word {
+  display: inline-flex;
+}
+
+.site-intro__brand-word--magic,
+.site-intro__brand-word--childcare {
+  color: var(--color-navy);
+}
+
+.site-intro__letter--coral {
+  color: var(--color-pink);
+}
+
+.site-intro__letter--yellow {
+  color: var(--color-yellow);
+}
+
+.site-intro__letter--turquoise {
+  color: var(--color-turquoise);
+}
+
+.site-intro__letter--blue {
+  color: #4f7dcc;
+}
+
+.site-intro__letter--periwinkle {
+  color: #6674d8;
+}
+
+.site-intro__letter--purple {
+  color: var(--color-purple);
 }
 
 @keyframes intro-balloon {
@@ -113,5 +150,11 @@
     opacity: 1;
     transform: none;
     animation: none !important;
+  }
+}
+
+@media (min-width: 980px) {
+  .site-intro__balloon {
+    width: 19.2rem;
   }
 }
