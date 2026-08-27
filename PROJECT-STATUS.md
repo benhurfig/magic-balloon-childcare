@@ -96,10 +96,12 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Files added for this enhancement: `assets/css/loader.css` and `assets/js/loader.js`. Updated: `assets/css/style.css`, `assets/css/hero.css`, `en/index.html`, `pt/index.html`, `es/index.html`, and `PROJECT-STATUS.md`.
 - About, Programs, Reviews, FAQ, Local SEO, and Final CTA remained pending and were not changed in the intro enhancement.
 - Monthly Bulletin / Now Enrolling completed in English, Portuguese, and Spanish immediately after the Hero.
-- The Bulletin uses the existing automatic localized month/year logic, highlights 2 openings, Full-Time care, and acceptance of Child Care Vouchers, and links its tracked CTA to `#family-request`.
-- Bulletin layout is mobile-first with stacked cards at 375px and 430px, changing to three columns from the existing 700px breakpoint.
+- The Bulletin was refined into a modern monthly panel with layered paper styling and prominent automatic localized month/year.
+- Availability is communicated without a fixed opening count. The panel explains Full-Time Monday–Friday care, Private Pay, Child Care Voucher acceptance, and introduces the Family Request process.
+- Its three cards now share the same icon, label, title, and supporting-text hierarchy. The tracked CTA links to `#family-request`.
+- Bulletin layout remains mobile-first with stacked cards at 375px and 430px, changing to three columns from the existing 700px breakpoint.
 - Files added for this phase: `assets/css/bulletin.css`. Updated: `assets/css/style.css`, `en/index.html`, `pt/index.html`, `es/index.html`, and `PROJECT-STATUS.md`.
 
 ## NEXT STEP
 
-`Build Trust / Reviews section`
+`Build Trust / Google Reviews section`
