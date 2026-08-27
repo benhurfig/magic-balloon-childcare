@@ -12,7 +12,7 @@ Magic Balloon Childcare
 
 ## CURRENT PHASE
 
-Header, Hero, Trust Strip, and Monthly Bulletin complete; Cloudflare Pages deployed and production DNS propagating
+Header, Hero, Trust Strip, Monthly Bulletin, and About Lucineia complete; Cloudflare Pages deployed and production DNS propagating
 
 ## ARCHITECTURE
 
@@ -64,7 +64,7 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - GA4 Measurement ID (`G-XXXXXXXXXX` is intentionally inactive).
 - Family Request URL.
 - Final page content and final SEO copy.
-- About, Programs, Reviews, FAQ, Local SEO, and Final CTA content.
+- Programs, Reviews, FAQ, Local SEO, and Final CTA content.
 - Legal copy and localized legal-page architecture.
 - Local SEO pages and reviews.
 - Search Console and Analytics deployment.
@@ -120,7 +120,12 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Namecheap DNS was updated before nameserver migration with `CNAME`, host `www`, target `magic-balloon-childcare.pages.dev`, TTL `30 min`.
 - DNS management was moved from Namecheap BasicDNS to Cloudflare using assigned nameservers `daisy.ns.cloudflare.com` and `quentin.ns.cloudflare.com`. Public resolver propagation has started, while Cloudflare zone activation remains pending.
 - Namecheap requires no additional manual action at this stage. Apex Pages binding, apex-to-`www` redirect, final SSL validation, and full production-route tests remain pending until Cloudflare finishes zone activation.
+- About Lucineia completed in English, Portuguese, and Spanish immediately after the Monthly Bulletin, using the confirmed Pedagogy and Early Childhood Education studies completed in Brazil and EEC Licensed status.
+- The About section uses a mobile-first semantic order of eyebrow, H2, copy, credentials, and visual; desktop CSS places the visual beside the content without changing the DOM order.
+- No suitable real photo of Lucineia was found in the project. The photo frame is prepared with a temporary decorative brand-icon placeholder; no stock or artificial person was added.
+- Unconfirmed claims about 10+ years of experience, pediatric offices, CDA, CPR, and First Aid were not added.
+- Each language page links the block stylesheet with a version identifier so the newly populated `about.css` is not masked by a previously cached empty file.
 
 ## NEXT STEP
 
-`After Cloudflare zone activation, bind the apex domain to Pages, configure apex-to-www, and complete production SSL and route verification before building another Home block.`
+`Build Child Care / Learning section`
