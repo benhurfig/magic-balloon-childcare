@@ -8,11 +8,11 @@ Magic Balloon Childcare
 
 ## REPOSITORY
 
-`https://github.com/benhurfig/magic-ballon-childcare`
+`https://github.com/benhurfig/magic-balloon-childcare`
 
 ## CURRENT PHASE
 
-Header, Hero, Trust Strip, and Monthly Bulletin complete; production setup awaiting Cloudflare access
+Header, Hero, Trust Strip, and Monthly Bulletin complete; Cloudflare Pages deployed and production DNS propagating
 
 ## ARCHITECTURE
 
@@ -60,7 +60,6 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 ## PENDING
 
 - Local folder still uses the former `Magic Ballon Childcare` spelling and must not be renamed during active development.
-- GitHub repository still uses the former `magic-ballon-childcare` slug. Rename to `magic-balloon-childcare` is pending because authenticated GitHub repository-management access is not available in this environment; existing `origin` remains unchanged.
 - Regenerate or edit all logo and brand image assets to display `Magic Balloon Childcare`; their existing filenames and image content remain unchanged for now.
 - GA4 Measurement ID (`G-XXXXXXXXXX` is intentionally inactive).
 - Family Request URL.
@@ -69,9 +68,9 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Legal copy and localized legal-page architecture.
 - Local SEO pages and reviews.
 - Search Console and Analytics deployment.
-- Create or identify the dedicated Cloudflare hosting project and provide authenticated Cloudflare access.
-- Replace current Namecheap parking DNS with the exact records supplied by the hosting project, activate SSL, and configure apex-to-`www` redirect.
-- Production deployment and live route verification after hosting and DNS are connected.
+- Wait for Cloudflare to finish activating the apex zone after the authoritative nameserver change.
+- Add `magicballoonchildcare.com` to the Pages project after zone activation and configure the apex-to-`www` redirect.
+- Complete public apex, redirect, and route verification after global DNS and SSL propagation.
 
 ## COMPLETED
 
@@ -114,7 +113,14 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Production readiness check found the public domain still using Namecheap parking DNS, with no active site SSL on `www`. Cloudflare deployment, DNS replacement, SSL, apex-to-`www` redirect, and final route checks remain pending until authenticated hosting access is available.
 - The previously approved mobile Hero content-order correction is included in the current working changes; text and H1 precede the Hero image on mobile.
 - Existing logo and image files were not renamed or edited and still require a later brand-asset correction.
+- GitHub repository renamed from `magic-ballon-childcare` to `magic-balloon-childcare` without creating or duplicating a repository. Local `origin` now uses `https://github.com/benhurfig/magic-balloon-childcare.git`; fetch succeeded and `origin/main` is available.
+- Dedicated Cloudflare Pages project `magic-balloon-childcare` created from the official GitHub repository with production branch `main`, no framework preset, no build command, and `/` as the static output directory.
+- Initial Pages deployment completed successfully at `https://magic-balloon-childcare.pages.dev`; root redirects to `/en/`, and EN/PT/ES, CSS, JavaScript, images, and the favicon are served from the deployment.
+- `www.magicballoonchildcare.com` was added to the Pages project and Cloudflare reports it as active with SSL enabled.
+- Namecheap DNS was updated before nameserver migration with `CNAME`, host `www`, target `magic-balloon-childcare.pages.dev`, TTL `30 min`.
+- DNS management was moved from Namecheap BasicDNS to Cloudflare using assigned nameservers `daisy.ns.cloudflare.com` and `quentin.ns.cloudflare.com`. Public resolver propagation has started, while Cloudflare zone activation remains pending.
+- Namecheap requires no additional manual action at this stage. Apex Pages binding, apex-to-`www` redirect, final SSL validation, and full production-route tests remain pending until Cloudflare finishes zone activation.
 
 ## NEXT STEP
 
-`Connect authenticated Cloudflare hosting, replace the Namecheap parking DNS with provider-issued records, and verify production SSL/routes before building another Home block.`
+`After Cloudflare zone activation, bind the apex domain to Pages, configure apex-to-www, and complete production SSL and route verification before building another Home block.`
