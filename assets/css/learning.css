@@ -1,0 +1,174 @@
+.learning {
+  position: relative;
+  overflow: hidden;
+  padding-block: var(--section-spacing);
+  background:
+    radial-gradient(circle at 7% 18%, rgb(184 227 255 / 32%), transparent 17rem),
+    radial-gradient(circle at 94% 86%, rgb(123 97 255 / 7%), transparent 18rem),
+    var(--color-cloud-white);
+}
+
+.learning::before,
+.learning::after {
+  position: absolute;
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+}
+
+.learning::before {
+  top: 7%;
+  right: -3rem;
+  width: 8rem;
+  height: 8rem;
+  border: 1.4rem solid rgb(47 185 177 / 8%);
+}
+
+.learning::after {
+  bottom: 6%;
+  left: -2.5rem;
+  width: 6rem;
+  height: 6rem;
+  background: rgb(255 92 138 / 7%);
+}
+
+.learning__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.learning__header {
+  max-width: 50rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.learning .section-eyebrow {
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.learning__title {
+  margin-bottom: 1.15rem;
+  color: var(--color-navy);
+  font-size: clamp(2.15rem, 9vw, 4rem);
+  letter-spacing: -0.04em;
+  text-wrap: balance;
+}
+
+.learning__description {
+  max-width: 47rem;
+  margin: 0 auto;
+  color: var(--color-text-secondary);
+  font-size: clamp(1rem, 3.8vw, 1.1rem);
+  line-height: 1.8;
+}
+
+.learning__grid {
+  display: grid;
+  gap: 1rem;
+  max-width: 68rem;
+  margin: 2.5rem auto 0;
+}
+
+.learning-card {
+  --learning-accent: var(--color-light-blue);
+  --learning-accent-soft: rgb(184 227 255 / 20%);
+  position: relative;
+  overflow: hidden;
+  min-width: 0;
+  padding: clamp(1.4rem, 5vw, 2rem);
+  border: 1px solid rgb(31 42 68 / 8%);
+  border-top: 0.28rem solid var(--learning-accent);
+  border-radius: var(--radius-medium);
+  background: #fff;
+  box-shadow: 0 0.8rem 2rem rgb(31 42 68 / 7%);
+}
+
+.learning-card::after {
+  position: absolute;
+  right: -2.5rem;
+  bottom: -3rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background: var(--learning-accent-soft);
+  content: "";
+  pointer-events: none;
+}
+
+.learning-card--yellow {
+  --learning-accent: var(--color-yellow);
+  --learning-accent-soft: rgb(255 200 69 / 14%);
+}
+
+.learning-card--coral {
+  --learning-accent: var(--color-pink);
+  --learning-accent-soft: rgb(255 92 138 / 11%);
+}
+
+.learning-card--purple {
+  --learning-accent: var(--color-purple);
+  --learning-accent-soft: rgb(123 97 255 / 10%);
+}
+
+.learning-card--turquoise {
+  --learning-accent: var(--color-turquoise);
+  --learning-accent-soft: rgb(47 185 177 / 11%);
+}
+
+.learning-card__icon {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 3.25rem;
+  height: 3.25rem;
+  margin-bottom: 1.15rem;
+  place-items: center;
+  border-radius: 1rem;
+  color: var(--color-navy);
+  background: color-mix(in srgb, var(--learning-accent) 28%, white);
+}
+
+.learning-card__icon svg {
+  width: 1.55rem;
+  height: 1.55rem;
+}
+
+.learning-card__title {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0.65rem;
+  color: var(--color-navy);
+  font-size: clamp(1.25rem, 5vw, 1.55rem);
+}
+
+.learning-card__text {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+@media (min-width: 700px) {
+  .learning__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+    margin-top: 3rem;
+  }
+
+  .learning-card {
+    min-height: 16rem;
+  }
+}
+
+@media (min-width: 980px) {
+  .learning__grid {
+    gap: 1.5rem;
+  }
+
+  .learning-card {
+    padding: 2.15rem;
+  }
+}

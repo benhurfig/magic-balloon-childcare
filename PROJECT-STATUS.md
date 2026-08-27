@@ -12,7 +12,7 @@ Magic Balloon Childcare
 
 ## CURRENT PHASE
 
-Header, Hero, Trust Strip, Monthly Bulletin, and About Lucineia complete; Cloudflare Pages deployed and production DNS propagating
+Header, Hero, Trust Strip, Monthly Bulletin, About Lucineia, and Learning Approach complete; Cloudflare Pages deployed and production DNS propagating
 
 ## ARCHITECTURE
 
@@ -65,7 +65,7 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - GA4 Measurement ID (`G-XXXXXXXXXX` is intentionally inactive).
 - Family Request URL.
 - Final page content and final SEO copy.
-- Programs, Reviews, FAQ, Local SEO, and Final CTA content.
+- Our Space, Reviews, FAQ, Local SEO, and Final CTA content.
 - Legal copy and localized legal-page architecture.
 - Local SEO pages and reviews.
 - Search Console and Analytics deployment.
@@ -126,7 +126,11 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - No suitable real photo of Lucineia was found in the project. The photo frame is prepared with a temporary decorative brand-icon placeholder; no stock or artificial person was added.
 - Unconfirmed claims about 10+ years of experience, pediatric offices, CDA, CPR, and First Aid were not added.
 - Each language page links the block stylesheet with a version identifier so the newly populated `about.css` is not masked by a previously cached empty file.
+- Child Care / Learning Approach completed in English, Portuguese, and Spanish immediately after About Lucineia.
+- Four consistent learning pillars were implemented: Learning Through Play, Creative Activities, Language & Communication, and Movement & Exploration, with localized copy and matching brand-color icons.
+- The Learning Approach is mobile-first with one card per row and changes to a readable 2-by-2 grid from the existing 700px breakpoint. It contains no CTA, photo, carousel, or horizontal scrolling.
+- No unconfirmed methodology, formal curriculum, certification, guaranteed development claim, routine, meal, screen-use, or outdoor-play claim was added.
 
 ## NEXT STEP
 
-`Build Child Care / Learning section`
+`Build Our Space / Daily Life section`
