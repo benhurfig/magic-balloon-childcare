@@ -32,6 +32,7 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Mobile-first styles with shared breakpoints at `700px` and `980px`.
 - CSS remains separated by block; no required bundle.
 - Text and primary actions precede visual media in the DOM.
+- On mobile, the primary image, video, or featured visual card must appear immediately after the main heading of its section and before supporting copy or secondary content.
 - Do not use CSS `order` to repair incorrect semantic order.
 - Future non-hero images should use lazy loading. The future hero image should not.
 - Add local `@font-face` declarations to `global.css` if licensed font files are provided.
@@ -121,7 +122,7 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - DNS management was moved from Namecheap BasicDNS to Cloudflare using assigned nameservers `daisy.ns.cloudflare.com` and `quentin.ns.cloudflare.com`. Public resolver propagation has started, while Cloudflare zone activation remains pending.
 - Namecheap requires no additional manual action at this stage. Apex Pages binding, apex-to-`www` redirect, final SSL validation, and full production-route tests remain pending until Cloudflare finishes zone activation.
 - About Lucineia completed in English, Portuguese, and Spanish immediately after the Monthly Bulletin, using the confirmed Pedagogy and Early Childhood Education studies completed in Brazil and EEC Licensed status.
-- The About section uses a mobile-first semantic order of eyebrow, H2, copy, credentials, and visual; desktop CSS places the visual beside the content without changing the DOM order.
+- The About section uses a mobile-first semantic order of eyebrow, H2, visual, copy, and credentials; desktop CSS places the visual beside the content without changing the DOM order.
 - No suitable real photo of Lucineia was found in the project. The photo frame is prepared with a temporary decorative brand-icon placeholder; no stock or artificial person was added.
 - Unconfirmed claims about 10+ years of experience, pediatric offices, CDA, CPR, and First Aid were not added.
 - Each language page links the block stylesheet with a version identifier so the newly populated `about.css` is not masked by a previously cached empty file.
