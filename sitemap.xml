@@ -40,4 +40,25 @@
   </url>
   <url><loc>https://www.magicballoonchildcare.com/pt/terms/</loc></url>
   <url><loc>https://www.magicballoonchildcare.com/es/terms/</loc></url>
+  <url>
+    <loc>https://www.magicballoonchildcare.com/en/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.magicballoonchildcare.com/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.magicballoonchildcare.com/pt/about/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.magicballoonchildcare.com/es/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.magicballoonchildcare.com/en/about/"/>
+  </url>
+  <url>
+    <loc>https://www.magicballoonchildcare.com/pt/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.magicballoonchildcare.com/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.magicballoonchildcare.com/pt/about/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.magicballoonchildcare.com/es/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.magicballoonchildcare.com/en/about/"/>
+  </url>
+  <url>
+    <loc>https://www.magicballoonchildcare.com/es/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.magicballoonchildcare.com/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.magicballoonchildcare.com/pt/about/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.magicballoonchildcare.com/es/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.magicballoonchildcare.com/en/about/"/>
+  </url>
 </urlset>

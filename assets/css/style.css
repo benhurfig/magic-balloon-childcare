@@ -14,6 +14,7 @@
 @import url("./local-seo.css");
 @import url("./footer.css");
 @import url("./legal.css");
+@import url("./about-page.css");
 
 .floating-contact {
   position: fixed;
