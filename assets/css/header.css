@@ -24,18 +24,76 @@
   gap: 0.75rem;
 }
 
-.site-header__logo {
-  display: inline-flex;
-  width: clamp(8.75rem, 42vw, 10.5rem);
-  height: 3.6rem;
-  flex: 0 0 auto;
+.site-header__brand {
+  display: grid;
+  min-width: 0;
+  flex: 0 1 auto;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 0.55rem;
   align-items: center;
 }
 
-.site-header__logo img {
-  width: 100%;
-  max-height: 100%;
+.site-header__logo {
+  display: block;
+  min-width: 0;
+  grid-column: 2;
+  grid-row: 1;
+  color: var(--color-navy);
+  text-decoration: none;
+}
+
+.site-header__brand-icon {
+  width: 2.55rem;
+  height: 2.55rem;
+  flex: 0 0 auto;
+  grid-column: 1;
+  grid-row: 1 / span 2;
   object-fit: contain;
+}
+
+.site-header__brand-copy {
+  display: grid;
+  min-width: 0;
+  line-height: 1;
+}
+
+.site-header__brand-copy strong {
+  overflow: hidden;
+  color: var(--color-navy);
+  font-family: var(--font-heading);
+  font-size: clamp(0.9rem, 3.8vw, 1.08rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.site-header__brand-copy > span {
+  margin-top: 0.18rem;
+  color: var(--color-turquoise);
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.site-header__phone {
+  min-width: 0;
+  grid-column: 2;
+  grid-row: 2;
+  align-self: start;
+  margin-top: 0.2rem;
+  color: var(--color-text-secondary);
+  font-size: 0.65rem;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-header__phone:hover {
+  color: var(--color-pink);
 }
 
 .site-navigation {
@@ -214,14 +272,23 @@ main {
     gap: 1rem;
   }
 
-  .site-header__logo {
-    width: 11.5rem;
+  .site-header__brand-icon {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+  .site-header__brand-copy strong {
+    font-size: 1.1rem;
+  }
+
+  .site-header__phone {
+    font-size: 0.7rem;
   }
 }
 
 @media (min-width: 980px) {
-  .site-header__logo {
-    width: 12rem;
+  .site-header__brand {
+    flex: 0 0 12rem;
   }
 
   .site-navigation {
