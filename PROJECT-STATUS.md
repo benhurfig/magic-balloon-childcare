@@ -12,7 +12,7 @@ Magic Ballon Childcare
 
 ## CURRENT PHASE
 
-Header and Hero complete
+Header, Hero, and Monthly Bulletin complete
 
 ## ARCHITECTURE
 
@@ -62,7 +62,7 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - GA4 Measurement ID (`G-XXXXXXXXXX` is intentionally inactive).
 - Family Request URL.
 - Final page content and final SEO copy.
-- Bulletin, About, Programs, Reviews, FAQ, Local SEO, and Final CTA content.
+- About, Programs, Reviews, FAQ, Local SEO, and Final CTA content.
 - Legal copy and localized legal-page architecture.
 - Local SEO pages and reviews.
 - Search Console and Analytics deployment.
@@ -94,8 +94,12 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Intro refinement: desktop balloon increased by a further 20% to approximately 317px during its final animation state, while mobile sizing remains unchanged. The company name now follows the approved logo palette, with navy supporting words and multicolor “Ballon” lettering.
 - Hero eyebrow updated from a decorative line to a reusable `section-eyebrow` component with the balloon icon and four simple color modifiers.
 - Files added for this enhancement: `assets/css/loader.css` and `assets/js/loader.js`. Updated: `assets/css/style.css`, `assets/css/hero.css`, `en/index.html`, `pt/index.html`, `es/index.html`, and `PROJECT-STATUS.md`.
-- Bulletin, About, Programs, Reviews, FAQ, Local SEO, and Final CTA remain pending and were not changed in this enhancement.
+- About, Programs, Reviews, FAQ, Local SEO, and Final CTA remained pending and were not changed in the intro enhancement.
+- Monthly Bulletin / Now Enrolling completed in English, Portuguese, and Spanish immediately after the Hero.
+- The Bulletin uses the existing automatic localized month/year logic, highlights 2 openings, Full-Time care, and acceptance of Child Care Vouchers, and links its tracked CTA to `#family-request`.
+- Bulletin layout is mobile-first with stacked cards at 375px and 430px, changing to three columns from the existing 700px breakpoint.
+- Files added for this phase: `assets/css/bulletin.css`. Updated: `assets/css/style.css`, `en/index.html`, `pt/index.html`, `es/index.html`, and `PROJECT-STATUS.md`.
 
 ## NEXT STEP
 
-`Build Monthly Bulletin / Now Enrolling section`
+`Build Trust / Reviews section`
