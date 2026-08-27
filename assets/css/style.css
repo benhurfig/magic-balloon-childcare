@@ -5,7 +5,6 @@
 @import url("./hero.css");
 @import url("./bulletin.css");
 @import url("./trust-strip.css");
-@import url("./programs.css");
 @import url("./about.css");
 @import url("./learning.css");
 @import url("./our-space.css");
@@ -14,7 +13,6 @@
 @import url("./final-cta.css");
 @import url("./local-seo.css");
 @import url("./footer.css");
-@import url("./responsive.css");
 
 .floating-contact {
   position: fixed;

@@ -6,7 +6,7 @@
   place-items: center;
   overflow: hidden;
   background: var(--color-cloud-white);
-  animation: intro-overlay 2.5s ease forwards;
+  animation: intro-overlay 1.55s ease forwards;
 }
 
 .site-intro__content {
@@ -22,7 +22,7 @@
   width: clamp(11.5rem, 54vw, 16rem);
   height: auto;
   transform-origin: center bottom;
-  animation: intro-balloon 1.2s cubic-bezier(0.22, 0.75, 0.28, 1) forwards;
+  animation: intro-balloon 0.7s cubic-bezier(0.22, 0.75, 0.28, 1) forwards;
   will-change: transform, opacity;
 }
 
@@ -35,7 +35,7 @@
   font-family: var(--font-heading);
   opacity: 0;
   transform: translateY(0.6rem);
-  animation: intro-copy 0.8s ease 0.5s forwards;
+  animation: intro-copy 0.55s ease 0.25s forwards;
 }
 
 .site-intro__lead {
@@ -113,7 +113,7 @@
 
 @keyframes intro-overlay {
   0%,
-  72% {
+  74% {
     opacity: 1;
   }
 
@@ -139,7 +139,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .site-intro {
-    animation: intro-reduced 240ms ease forwards !important;
+    animation: intro-reduced 200ms ease forwards !important;
   }
 
   .site-intro__balloon {

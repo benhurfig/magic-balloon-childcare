@@ -105,6 +105,40 @@
   transform: translateX(0.18rem);
 }
 
+.site-footer__contact-actions {
+  display: flex;
+  min-height: 2.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.85rem;
+  color: rgb(247 249 252 / 78%);
+}
+
+.site-footer__contact-number {
+  font-weight: 600;
+}
+
+.site-footer__contact-options {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.site-footer__contact-option {
+  color: var(--color-light-blue);
+  font-weight: 700;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.site-footer__contact-option:hover {
+  color: var(--color-pink);
+}
+
+.site-footer__contact-divider {
+  color: rgb(247 249 252 / 30%);
+}
+
 .site-footer__get-started {
   padding: 1.35rem;
   border: 1px solid rgb(255 255 255 / 11%);

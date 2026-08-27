@@ -6,7 +6,7 @@
   if (!intro) return;
 
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const removalDelay = reducedMotion ? 280 : 2600;
+  const removalDelay = reducedMotion ? 220 : 1600;
 
   window.setTimeout(() => {
     intro.remove();

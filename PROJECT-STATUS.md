@@ -12,7 +12,7 @@ Magic Balloon Childcare
 
 ## CURRENT PHASE
 
-The principal Home structure is complete: Header, Hero, Trust Strip, Monthly Bulletin, About Lucineia, Learning Approach, Our Space & Daily Life, Google Reviews, FAQ, Final Family Request CTA, Local SEO / Framingham, and Footer; Cloudflare Pages deployed and production DNS propagating
+The principal Home structure and controlled final-fixes pass are complete: Header, Hero, Trust Strip, Monthly Bulletin, About Lucineia, Learning Approach, Our Space & Daily Life, Google Reviews, FAQ, Final Family Request CTA, Local SEO / Framingham, and Footer. Cloudflare Pages and the `www` production domain are active; the apex redirect remains pending.
 
 ## ARCHITECTURE
 
@@ -64,12 +64,11 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Regenerate or edit all logo and brand image assets to display `Magic Balloon Childcare`; their existing filenames and image content remain unchanged for now.
 - GA4 Measurement ID (`G-XXXXXXXXXX` is intentionally inactive).
 - Final page content and final SEO copy.
-- Legal copy and localized legal-page architecture.
+- Privacy Policy and Terms of Service copy and localized legal-page architecture — **HIGH PRIORITY BEFORE GA4 ACTIVATION**.
 - Local SEO pages and reviews.
 - Search Console and Analytics deployment.
-- Wait for Cloudflare to finish activating the apex zone after the authoritative nameserver change.
-- Add `magicballoonchildcare.com` to the Pages project after zone activation and configure the apex-to-`www` redirect.
-- Complete public apex, redirect, and route verification after global DNS and SSL propagation.
+- Replace the current Open Graph image with an approved asset that visibly spells `Magic Balloon Childcare`; the only current OG artwork still shows the former `Magic Ballon Childcare` spelling. **PENDING ASSET REPLACEMENT**.
+- Hero visual and semantic order differ at mobile widths. The current approved visual behavior must remain unchanged; semantic alignment is a LOW/MEDIUM future improvement.
 
 ## COMPLETED
 
@@ -91,8 +90,8 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Files updated in this phase: `en/index.html`, `pt/index.html`, `es/index.html`, `assets/css/header.css`, `assets/css/hero.css`, `assets/js/main.js`, and `PROJECT-STATUS.md`.
 - Balloon intro overlay added to all three language pages using the existing lightweight `magic-ballon-favicon.png` asset. The balloon was enlarged by approximately 70%, reaching about 208px at 375px, 239px at 430px, and 264px from tablet through desktop.
 - The branded intro now includes localized copy: “Welcome to”, “Bem-vindo à”, or “Bienvenido a”, followed by “Magic Balloon Childcare”.
-- The intro sequence lasts approximately 2.5 seconds: balloon rise, copy fade-in, brief hold, and overlay fade-out. The overlay is removed from the DOM after 2.6 seconds.
-- Reduced-motion visitors receive no rise animation, a short 240ms composition fade, and DOM removal after 280ms.
+- The intro sequence lasts approximately 1.55 seconds: balloon rise, copy fade-in, brief hold, and overlay fade-out. The overlay is removed from the DOM after 1.6 seconds.
+- Reduced-motion visitors receive no rise animation, a short 200ms composition fade, and DOM removal after 220ms.
 - Intro refinement: desktop balloon increased by a further 20% to approximately 317px during its final animation state, while mobile sizing remains unchanged. The company name now follows the approved logo palette, with navy supporting words and multicolor “Balloon” lettering.
 - Hero eyebrow updated from a decorative line to a reusable `section-eyebrow` component with the balloon icon and four simple color modifiers.
 - Files added for this enhancement: `assets/css/loader.css` and `assets/js/loader.js`. Updated: `assets/css/style.css`, `assets/css/hero.css`, `en/index.html`, `pt/index.html`, `es/index.html`, and `PROJECT-STATUS.md`.
@@ -157,7 +156,15 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Footer interactions use the existing consent-gated analytics architecture for phone, text, email, Google Business, Instagram, navigation, and language events with `cta_location: "footer"`.
 - The Footer uses the existing standalone balloon icon with a textual `Magic Balloon Childcare` wordmark. Logo assets that may still display the former `Ballon` spelling remain pending correction and are not shown in the Footer.
 - The principal Home structure is now complete.
+- Controlled final Home fixes completed in EN/PT/ES: the official Google Business Profile URL is centralized in `config.js`, the old URL is absent, and the localized Footer contact now presents one phone number with separate Call/Text, Ligar/Mensagem, or Llamar/Mensaje actions.
+- HTML pages now load only `style.css`; component styles remain modular and are imported once through that file. Unused empty `programs.css` and comment-only `responsive.css` imports were removed.
+- Footer Family Request links continue to target `#family-request` and now use the active `cta_click` tracking pattern with location `footer`; redundant legacy tracking attributes were removed only from the touched elements.
+- The unrelated npm package-publishing workflow was removed because this static project has no `package.json`, package publication, build step, or npm automation.
+- The 1536×1536 header icon remains preserved and now has a 128×128 optimized web derivative. Lucineia's original PNG remains preserved and the Home now uses an optimized 960×804 JPEG derivative with the approved crop unchanged.
+- Obsolete `DOMAIN PLACEHOLDER` comments were removed without changing correct production URLs. No GA4 activation, Search Console configuration, structured data, legal copy, new pages, or Hero-order changes were made.
+- Final responsive verification passed at 375px, 430px, 700px, 980px, and 1440px in English, Portuguese, and Spanish with no horizontal overflow.
+- Cloudflare now has a proxied apex CNAME to the Pages project and an active 301 Single Redirect from `https://magicballoonchildcare.com/*` to `https://www.magicballoonchildcare.com/${1}`, with query-string preservation enabled. Public DNS/edge propagation may take a short time.
 
 ## NEXT STEP
 
-`Full Home QA: SEO, mobile, conversion, accessibility and performance`
+`Replace the approved OG asset and complete Privacy/Terms before GA4 activation`
