@@ -12,7 +12,7 @@ Magic Balloon Childcare
 
 ## CURRENT PHASE
 
-The principal Home structure and controlled final-fixes pass are complete. Privacy Policy and Terms of Service are implemented in English, Portuguese, and Spanish and are awaiting user approval.
+The principal Home structure and controlled final-fixes pass are complete. The final Local Area section is implemented and the Home is tested, approved, and frozen. Privacy Policy and Terms of Service are implemented in English, Portuguese, and Spanish and are awaiting user approval.
 
 ## ARCHITECTURE
 
@@ -166,7 +166,10 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - LEGAL PAGES P1 implemented with indexable, localized Privacy Policy and Terms of Service routes: `/privacy/`, `/terms/`, `/pt/privacy/`, `/pt/terms/`, `/es/privacy/`, and `/es/terms/`.
 - Legal pages use the existing visual system, shared Header/Footer styling, real language links, unique title and meta description, canonical and hreflang metadata, responsive long-form reading styles, and Cookie Settings access.
 - Home Footer legal placeholders now link to the correct localized legal routes. Legacy `/privacy-policy.html` and `/terms-of-service.html` routes permanently redirect to the new English routes.
+- The existing Local SEO / Framingham section was refined in EN/PT/ES without creating a duplicate block. It now communicates the Framingham location, convenience near Route 9, and welcomes families from Ashland, Natick, Marlborough, Holliston, and nearby communities without implying a physical location outside Framingham.
+- The Local Area CTA uses the established `#family-request` flow with `data-track="cta"` and `data-location="local_seo"`. The official Google Business Profile link remains unchanged in the Footer.
+- HOME — TESTED, APPROVED, FROZEN.
 
 ## NEXT STEP
 
-`LEGAL PAGES P1 — IMPLEMENTED — AWAITING USER APPROVAL`
+`HOME — TESTED, APPROVED, FROZEN`
