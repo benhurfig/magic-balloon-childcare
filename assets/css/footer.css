@@ -115,14 +115,15 @@
 .site-footer__family-link {
   display: inline-flex;
   width: 100%;
-  min-height: 3.2rem;
+  min-height: 4rem;
   align-items: center;
   justify-content: center;
-  padding: 0.75rem 1rem;
+  padding: 1rem 1.35rem;
   border-radius: var(--radius-pill);
   color: #fff;
   background: var(--color-pink);
   font-weight: 700;
+  font-size: 1rem;
   line-height: 1.35;
   text-align: center;
   text-decoration: none;
@@ -221,6 +222,17 @@
 
 .site-footer__credit {
   color: rgb(184 227 255 / 65%);
+}
+
+.site-footer__credit a {
+  color: var(--color-turquoise);
+  font-weight: 700;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.site-footer__credit a:hover {
+  color: var(--color-yellow);
 }
 
 @media (min-width: 700px) {

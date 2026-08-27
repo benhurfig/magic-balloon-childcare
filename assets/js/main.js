@@ -9,8 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const languageSelector = document.querySelector("[data-language-selector]");
   const languageButton = document.querySelector("[data-language-toggle]");
   const languageMenu = document.querySelector("[data-language-menu]");
-  const floatingContact = document.querySelector("[data-floating-contact]");
-  const floatingToggle = document.querySelector("[data-floating-toggle]");
   let menuReturnFocus = null;
 
   const closeNavigation = (restoreFocus = true) => {
@@ -77,33 +75,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  const setFloatingOpen = (open) => {
-    floatingContact?.classList.toggle("is-open", open);
-    floatingToggle?.setAttribute("aria-expanded", String(open));
-    floatingContact?.querySelector("[data-floating-menu]")?.setAttribute("aria-hidden", String(!open));
-    if (open) floatingContact?.querySelector("a")?.focus();
-  };
-
-  floatingToggle?.addEventListener("click", () => {
-    setFloatingOpen(!floatingContact?.classList.contains("is-open"));
-  });
-  floatingContact?.addEventListener("click", (event) => {
-    if (event.target.closest("a")) setFloatingOpen(false);
-  });
-
   document.addEventListener("click", (event) => {
     if (languageSelector && !languageSelector.contains(event.target)) closeLanguageMenu();
-    if (floatingContact && !floatingContact.contains(event.target)) setFloatingOpen(false);
   });
 
   document.addEventListener("keydown", (event) => {
     if (event.key !== "Escape") return;
     closeNavigation();
     closeLanguageMenu(true);
-    if (floatingContact?.classList.contains("is-open")) {
-      setFloatingOpen(false);
-      floatingToggle?.focus();
-    }
   });
 
   window.addEventListener("resize", () => {
