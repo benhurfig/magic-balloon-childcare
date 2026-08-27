@@ -1,5 +1,5 @@
 .trust-strip {
-  padding-block: clamp(2.5rem, 6vw, 4rem);
+  padding-block: clamp(1.25rem, 3vw, 2rem);
   background: #fff;
 }
 

@@ -46,18 +46,15 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     if (!copy) return;
+    const settings = document.querySelector("[data-cookie-settings]");
     const panel = document.createElement("section");
     panel.className = "cookie-consent";
     panel.setAttribute("role", "dialog");
     panel.setAttribute("aria-label", copy.label);
     panel.hidden = true;
     panel.innerHTML = `<p>${copy.text}</p><div class="cookie-consent__actions"><button class="cookie-consent__button" type="button" data-cookie-reject>${copy.reject}</button><button class="cookie-consent__button cookie-consent__button--accept" type="button" data-cookie-accept>${copy.accept}</button></div>`;
-    const settings = document.createElement("button");
-    settings.className = "cookie-settings";
-    settings.type = "button";
-    settings.textContent = copy.settings;
-    settings.hidden = true;
-    document.body.append(panel, settings);
+    if (settings) settings.textContent = copy.settings;
+    document.body.append(panel);
 
     const save = (value) => {
       try { localStorage.setItem(storageKey, value); } catch (error) { /* Storage may be unavailable. */ }
@@ -66,12 +63,11 @@
       save(accepted ? "accepted" : "rejected");
       applyChoice(accepted);
       panel.hidden = true;
-      settings.hidden = false;
-      settings.focus();
+      if (settings) settings.hidden = false;
     };
     panel.querySelector("[data-cookie-accept]").addEventListener("click", () => choose(true));
     panel.querySelector("[data-cookie-reject]").addEventListener("click", () => choose(false));
-    settings.addEventListener("click", () => {
+    settings?.addEventListener("click", () => {
       panel.hidden = false;
       settings.hidden = true;
       panel.querySelector("[data-cookie-reject]").focus();
@@ -81,7 +77,7 @@
     try { saved = localStorage.getItem(storageKey); } catch (error) { /* Storage may be unavailable. */ }
     if (saved === "accepted" || saved === "rejected") {
       applyChoice(saved === "accepted");
-      settings.hidden = false;
+      if (settings) settings.hidden = false;
     } else {
       panel.hidden = false;
     }

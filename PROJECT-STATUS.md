@@ -12,7 +12,7 @@ Magic Balloon Childcare
 
 ## CURRENT PHASE
 
-Header, Hero, Monthly Bulletin, and Trust Strip complete
+Header, Hero, Trust Strip, and Monthly Bulletin complete; production setup awaiting Cloudflare access
 
 ## ARCHITECTURE
 
@@ -60,7 +60,7 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 ## PENDING
 
 - Local folder still uses the former `Magic Ballon Childcare` spelling and must not be renamed during active development.
-- GitHub repository still uses the former `magic-ballon-childcare` slug and may be renamed later without changing it in this phase.
+- GitHub repository still uses the former `magic-ballon-childcare` slug. Rename to `magic-balloon-childcare` is pending because authenticated GitHub repository-management access is not available in this environment; existing `origin` remains unchanged.
 - Regenerate or edit all logo and brand image assets to display `Magic Balloon Childcare`; their existing filenames and image content remain unchanged for now.
 - GA4 Measurement ID (`G-XXXXXXXXXX` is intentionally inactive).
 - Family Request URL.
@@ -69,7 +69,9 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Legal copy and localized legal-page architecture.
 - Local SEO pages and reviews.
 - Search Console and Analytics deployment.
-- Cloudflare, hosting, redirects, and production deployment.
+- Create or identify the dedicated Cloudflare hosting project and provide authenticated Cloudflare access.
+- Replace current Namecheap parking DNS with the exact records supplied by the hosting project, activate SSL, and configure apex-to-`www` redirect.
+- Production deployment and live route verification after hosting and DNS are connected.
 
 ## COMPLETED
 
@@ -105,9 +107,14 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Files added for this phase: `assets/css/bulletin.css`. Updated: `assets/css/style.css`, `en/index.html`, `pt/index.html`, `es/index.html`, and `PROJECT-STATUS.md`.
 - Official brand spelling updated across visible copy, metadata, configuration, consent storage, manifest, and technical SEO to `Magic Balloon Childcare`.
 - Production URLs now use `https://www.magicballoonchildcare.com/` in canonical, hreflang, Open Graph, sitemap, robots, and configuration references.
-- Trust Strip completed immediately after the Bulletin with four confirmed trust signals: EEC Licensed, Child Care Vouchers Accepted, Full-Time Monday–Friday care, and Portuguese/English exposure.
+- Trust Strip moved to immediately after the Hero and before the Monthly Bulletin, with compact spacing and four confirmed trust signals: EEC Licensed, Child Care Vouchers Accepted, Full-Time Monday–Friday care, and Portuguese/English exposure.
+- Trust Strip heading structure now uses one localized visually hidden `h2` per page and `h3` headings for the four trust items, preserving the single page `h1`.
+- Cookie settings is now a discreet structural link after the page content instead of a fixed viewport button. It appears after a consent choice and can reopen the consent controls.
+- Root redirect to `/en/` is marked permanent in `_redirects`; canonical production URLs consistently use `https://www.magicballoonchildcare.com/`.
+- Production readiness check found the public domain still using Namecheap parking DNS, with no active site SSL on `www`. Cloudflare deployment, DNS replacement, SSL, apex-to-`www` redirect, and final route checks remain pending until authenticated hosting access is available.
+- The previously approved mobile Hero content-order correction is included in the current working changes; text and H1 precede the Hero image on mobile.
 - Existing logo and image files were not renamed or edited and still require a later brand-asset correction.
 
 ## NEXT STEP
 
-`Build Google Reviews section after real reviews are provided`
+`Connect authenticated Cloudflare hosting, replace the Namecheap parking DNS with provider-issued records, and verify production SSL/routes before building another Home block.`
