@@ -12,7 +12,7 @@ Magic Balloon Childcare
 
 ## CURRENT PHASE
 
-Header, Hero, Trust Strip, Monthly Bulletin, About Lucineia, Learning Approach, Our Space & Daily Life, and Google Reviews complete; Cloudflare Pages deployed and production DNS propagating
+Header, Hero, Trust Strip, Monthly Bulletin, About Lucineia, Learning Approach, Our Space & Daily Life, Google Reviews, and FAQ complete; Cloudflare Pages deployed and production DNS propagating
 
 ## ARCHITECTURE
 
@@ -65,7 +65,7 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - GA4 Measurement ID (`G-XXXXXXXXXX` is intentionally inactive).
 - Family Request URL.
 - Final page content and final SEO copy.
-- FAQ, Local SEO, and Final CTA content.
+- Local SEO and Final CTA content.
 - Legal copy and localized legal-page architecture.
 - Local SEO pages and reviews.
 - Search Console and Analytics deployment.
@@ -139,7 +139,12 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - The aggregate 4.5 rating is intentionally not highlighted while a reported mistaken review correction remains pending; no 5.0 aggregate claim was made.
 - No Review or AggregateRating structured data was implemented.
 - Each language page links the populated Reviews stylesheet with a version identifier so an earlier cached empty `reviews.css` cannot mask the new section design.
+- FAQ completed in English, Portuguese, and Spanish immediately after Google Reviews with seven questions covering Child Care Voucher, Full-Time care, ages, languages, new-family availability, Family Request, and visits.
+- The FAQ uses an accessible button-based accordion with correct `aria-expanded`, `aria-controls`, labeled answer regions, keyboard support, Escape-to-close behavior, and one open question at a time.
+- All FAQ items begin closed, remain full-width and touch-friendly on mobile, and use a comfortable centered reading width on desktop.
+- The Family Request process and weekday visits after 5:00 PM are explained without adding a competing CTA.
+- No `FAQPage` or other FAQ structured data was added.
 
 ## NEXT STEP
 
-`Build FAQ section`
+`Build Local SEO / Framingham section`

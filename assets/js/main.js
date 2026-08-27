@@ -123,4 +123,30 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("[data-current-year]").forEach((element) => {
     element.textContent = String(now.getFullYear());
   });
+
+  const faqButtons = [...document.querySelectorAll("[data-faq-button]")];
+
+  const setFaqOpen = (button, open) => {
+    const item = button.closest(".faq-item");
+    const answer = document.getElementById(button.getAttribute("aria-controls"));
+    item?.classList.toggle("is-open", open);
+    button.setAttribute("aria-expanded", String(open));
+    answer?.setAttribute("aria-hidden", String(!open));
+    const indicator = button.querySelector("[data-faq-indicator]");
+    if (indicator) indicator.textContent = open ? "−" : "+";
+  };
+
+  faqButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const shouldOpen = button.getAttribute("aria-expanded") !== "true";
+      faqButtons.forEach((otherButton) => setFaqOpen(otherButton, false));
+      if (shouldOpen) setFaqOpen(button, true);
+    });
+
+    button.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && button.getAttribute("aria-expanded") === "true") {
+        setFaqOpen(button, false);
+      }
+    });
+  });
 });
