@@ -12,7 +12,7 @@ Magic Balloon Childcare
 
 ## CURRENT PHASE
 
-The principal Home structure and controlled final-fixes pass are complete: Header, Hero, Trust Strip, Monthly Bulletin, About Lucineia, Learning Approach, Our Space & Daily Life, Google Reviews, FAQ, Final Family Request CTA, Local SEO / Framingham, and Footer. Cloudflare Pages and the `www` production domain are active; the apex redirect remains pending.
+The principal Home structure and controlled final-fixes pass are complete. Privacy Policy and Terms of Service are implemented in English, Portuguese, and Spanish and are awaiting user approval.
 
 ## ARCHITECTURE
 
@@ -64,7 +64,6 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Regenerate or edit all logo and brand image assets to display `Magic Balloon Childcare`; their existing filenames and image content remain unchanged for now.
 - GA4 Measurement ID (`G-XXXXXXXXXX` is intentionally inactive).
 - Final page content and final SEO copy.
-- Privacy Policy and Terms of Service copy and localized legal-page architecture — **HIGH PRIORITY BEFORE GA4 ACTIVATION**.
 - Local SEO pages and reviews.
 - Search Console and Analytics deployment.
 - Replace the current Open Graph image with an approved asset that visibly spells `Magic Balloon Childcare`; the only current OG artwork still shows the former `Magic Ballon Childcare` spelling. **PENDING ASSET REPLACEMENT**.
@@ -164,7 +163,10 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Obsolete `DOMAIN PLACEHOLDER` comments were removed without changing correct production URLs. No GA4 activation, Search Console configuration, structured data, legal copy, new pages, or Hero-order changes were made.
 - Final responsive verification passed at 375px, 430px, 700px, 980px, and 1440px in English, Portuguese, and Spanish with no horizontal overflow.
 - Cloudflare now has a proxied apex CNAME to the Pages project and an active 301 Single Redirect from `https://magicballoonchildcare.com/*` to `https://www.magicballoonchildcare.com/${1}`, with query-string preservation enabled. Public DNS/edge propagation may take a short time.
+- LEGAL PAGES P1 implemented with indexable, localized Privacy Policy and Terms of Service routes: `/privacy/`, `/terms/`, `/pt/privacy/`, `/pt/terms/`, `/es/privacy/`, and `/es/terms/`.
+- Legal pages use the existing visual system, shared Header/Footer styling, real language links, unique title and meta description, canonical and hreflang metadata, responsive long-form reading styles, and Cookie Settings access.
+- Home Footer legal placeholders now link to the correct localized legal routes. Legacy `/privacy-policy.html` and `/terms-of-service.html` routes permanently redirect to the new English routes.
 
 ## NEXT STEP
 
-`Replace the approved OG asset and complete Privacy/Terms before GA4 activation`
+`LEGAL PAGES P1 — IMPLEMENTED — AWAITING USER APPROVAL`
