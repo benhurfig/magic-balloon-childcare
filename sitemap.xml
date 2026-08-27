@@ -3,24 +3,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://DOMAIN-PLACEHOLDER.com/en/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://DOMAIN-PLACEHOLDER.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://DOMAIN-PLACEHOLDER.com/pt/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://DOMAIN-PLACEHOLDER.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://DOMAIN-PLACEHOLDER.com/en/"/>
+    <loc>https://www.magicballoonchildcare.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.magicballoonchildcare.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.magicballoonchildcare.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.magicballoonchildcare.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.magicballoonchildcare.com/en/"/>
   </url>
   <url>
-    <loc>https://DOMAIN-PLACEHOLDER.com/pt/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://DOMAIN-PLACEHOLDER.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://DOMAIN-PLACEHOLDER.com/pt/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://DOMAIN-PLACEHOLDER.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://DOMAIN-PLACEHOLDER.com/en/"/>
+    <loc>https://www.magicballoonchildcare.com/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.magicballoonchildcare.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.magicballoonchildcare.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.magicballoonchildcare.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.magicballoonchildcare.com/en/"/>
   </url>
   <url>
-    <loc>https://DOMAIN-PLACEHOLDER.com/es/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://DOMAIN-PLACEHOLDER.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://DOMAIN-PLACEHOLDER.com/pt/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://DOMAIN-PLACEHOLDER.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://DOMAIN-PLACEHOLDER.com/en/"/>
+    <loc>https://www.magicballoonchildcare.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.magicballoonchildcare.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.magicballoonchildcare.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.magicballoonchildcare.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.magicballoonchildcare.com/en/"/>
   </url>
 </urlset>

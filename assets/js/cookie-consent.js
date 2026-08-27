@@ -1,8 +1,8 @@
 "use strict";
 
 (() => {
-  const storageKey = "magicBallonCookieConsent";
-  const config = window.MAGIC_BALLON_CONFIG || {};
+  const storageKey = "magicBalloonCookieConsent";
+  const config = window.MAGIC_BALLOON_CONFIG || {};
   const copy = {
     "en-US": { text: "We use optional analytics cookies to improve the website.", accept: "Accept analytics", reject: "Decline", settings: "Cookie settings", label: "Cookie consent" },
     "pt-BR": { text: "Usamos cookies opcionais de análise para melhorar o website.", accept: "Aceitar analytics", reject: "Recusar", settings: "Configurar cookies", label: "Consentimento de cookies" },

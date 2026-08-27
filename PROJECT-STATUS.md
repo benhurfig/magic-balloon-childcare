@@ -1,6 +1,6 @@
 # PROJECT
 
-Magic Ballon Childcare
+Magic Balloon Childcare
 
 ## LOCAL PATH
 
@@ -12,7 +12,7 @@ Magic Ballon Childcare
 
 ## CURRENT PHASE
 
-Header, Hero, and Monthly Bulletin complete
+Header, Hero, Monthly Bulletin, and Trust Strip complete
 
 ## ARCHITECTURE
 
@@ -50,7 +50,8 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 
 ## CONFIRMED BUSINESS DATA
 
-- Magic Ballon Childcare
+- Magic Balloon Childcare
+- Production domain selected: `https://www.magicballoonchildcare.com/`
 - Framingham, MA
 - Phone/SMS: `+1 774-427-9253`
 - Instagram: `https://www.instagram.com/magicballoonchildcare/`
@@ -58,7 +59,9 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 
 ## PENDING
 
-- Production domain and replacement of every `DOMAIN-PLACEHOLDER` value.
+- Local folder still uses the former `Magic Ballon Childcare` spelling and must not be renamed during active development.
+- GitHub repository still uses the former `magic-ballon-childcare` slug and may be renamed later without changing it in this phase.
+- Regenerate or edit all logo and brand image assets to display `Magic Balloon Childcare`; their existing filenames and image content remain unchanged for now.
 - GA4 Measurement ID (`G-XXXXXXXXXX` is intentionally inactive).
 - Family Request URL.
 - Final page content and final SEO copy.
@@ -67,7 +70,6 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Local SEO pages and reviews.
 - Search Console and Analytics deployment.
 - Cloudflare, hosting, redirects, and production deployment.
-- Add the final sitemap URL to `robots.txt` after the domain is confirmed.
 
 ## COMPLETED
 
@@ -78,7 +80,7 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Accessible language selector using real links and `aria-current`.
 - Automatic month/year logic based on page language.
 - Accessible floating Start Here/SMS component using the confirmed phone number.
-- Consent infrastructure using `magicBallonCookieConsent`, with Analytics and advertising denied by default.
+- Consent infrastructure using `magicBalloonCookieConsent`, with Analytics and advertising denied by default.
 - Central configuration and generic consent-gated analytics events.
 - Canonical, hreflang, Open Graph, X card, favicon, manifest, robots, sitemap, and redirect foundations.
 - Minimal legal-page placeholders without invented legal copy.
@@ -88,10 +90,10 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Responsive review completed at 375px, 430px, 700px, 980px, and 1440px with no horizontal overflow or browser console errors.
 - Files updated in this phase: `en/index.html`, `pt/index.html`, `es/index.html`, `assets/css/header.css`, `assets/css/hero.css`, `assets/js/main.js`, and `PROJECT-STATUS.md`.
 - Balloon intro overlay added to all three language pages using the existing lightweight `magic-ballon-favicon.png` asset. The balloon was enlarged by approximately 70%, reaching about 208px at 375px, 239px at 430px, and 264px from tablet through desktop.
-- The branded intro now includes localized copy: “Welcome to”, “Bem-vindo à”, or “Bienvenido a”, followed by “Magic Ballon Childcare”.
+- The branded intro now includes localized copy: “Welcome to”, “Bem-vindo à”, or “Bienvenido a”, followed by “Magic Balloon Childcare”.
 - The intro sequence lasts approximately 2.5 seconds: balloon rise, copy fade-in, brief hold, and overlay fade-out. The overlay is removed from the DOM after 2.6 seconds.
 - Reduced-motion visitors receive no rise animation, a short 240ms composition fade, and DOM removal after 280ms.
-- Intro refinement: desktop balloon increased by a further 20% to approximately 317px during its final animation state, while mobile sizing remains unchanged. The company name now follows the approved logo palette, with navy supporting words and multicolor “Ballon” lettering.
+- Intro refinement: desktop balloon increased by a further 20% to approximately 317px during its final animation state, while mobile sizing remains unchanged. The company name now follows the approved logo palette, with navy supporting words and multicolor “Balloon” lettering.
 - Hero eyebrow updated from a decorative line to a reusable `section-eyebrow` component with the balloon icon and four simple color modifiers.
 - Files added for this enhancement: `assets/css/loader.css` and `assets/js/loader.js`. Updated: `assets/css/style.css`, `assets/css/hero.css`, `en/index.html`, `pt/index.html`, `es/index.html`, and `PROJECT-STATUS.md`.
 - About, Programs, Reviews, FAQ, Local SEO, and Final CTA remained pending and were not changed in the intro enhancement.
@@ -101,7 +103,11 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Its three cards now share the same icon, label, title, and supporting-text hierarchy. The tracked CTA links to `#family-request`.
 - Bulletin layout remains mobile-first with stacked cards at 375px and 430px, changing to three columns from the existing 700px breakpoint.
 - Files added for this phase: `assets/css/bulletin.css`. Updated: `assets/css/style.css`, `en/index.html`, `pt/index.html`, `es/index.html`, and `PROJECT-STATUS.md`.
+- Official brand spelling updated across visible copy, metadata, configuration, consent storage, manifest, and technical SEO to `Magic Balloon Childcare`.
+- Production URLs now use `https://www.magicballoonchildcare.com/` in canonical, hreflang, Open Graph, sitemap, robots, and configuration references.
+- Trust Strip completed immediately after the Bulletin with four confirmed trust signals: EEC Licensed, Child Care Vouchers Accepted, Full-Time Monday–Friday care, and Portuguese/English exposure.
+- Existing logo and image files were not renamed or edited and still require a later brand-asset correction.
 
 ## NEXT STEP
 
-`Build Trust / Google Reviews section`
+`Build Google Reviews section after real reviews are provided`

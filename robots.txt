@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-# Add the production sitemap URL after the domain is confirmed.
+Sitemap: https://www.magicballoonchildcare.com/sitemap.xml
