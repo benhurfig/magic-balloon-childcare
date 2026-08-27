@@ -12,7 +12,7 @@ Magic Balloon Childcare
 
 ## CURRENT PHASE
 
-Header, Hero, Trust Strip, Monthly Bulletin, About Lucineia, and Learning Approach complete; Cloudflare Pages deployed and production DNS propagating
+Header, Hero, Trust Strip, Monthly Bulletin, About Lucineia, Learning Approach, and Our Space & Daily Life complete; Cloudflare Pages deployed and production DNS propagating
 
 ## ARCHITECTURE
 
@@ -65,7 +65,7 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - GA4 Measurement ID (`G-XXXXXXXXXX` is intentionally inactive).
 - Family Request URL.
 - Final page content and final SEO copy.
-- Our Space, Reviews, FAQ, Local SEO, and Final CTA content.
+- Reviews, FAQ, Local SEO, and Final CTA content.
 - Legal copy and localized legal-page architecture.
 - Local SEO pages and reviews.
 - Search Console and Analytics deployment.
@@ -123,14 +123,18 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Namecheap requires no additional manual action at this stage. Apex Pages binding, apex-to-`www` redirect, final SSL validation, and full production-route tests remain pending until Cloudflare finishes zone activation.
 - About Lucineia completed in English, Portuguese, and Spanish immediately after the Monthly Bulletin, using the confirmed Pedagogy and Early Childhood Education studies completed in Brazil and EEC Licensed status.
 - The About section uses a mobile-first semantic order of eyebrow, H2, visual, copy, and credentials; desktop CSS places the visual beside the content without changing the DOM order.
-- No suitable real photo of Lucineia was found in the project. The photo frame is prepared with a temporary decorative brand-icon placeholder; no stock or artificial person was added.
+- Lucineia's real provider photo is integrated into the prepared organic About frame; no stock or artificial person is used.
 - Unconfirmed claims about 10+ years of experience, pediatric offices, CDA, CPR, and First Aid were not added.
 - Each language page links the block stylesheet with a version identifier so the newly populated `about.css` is not masked by a previously cached empty file.
 - Child Care / Learning Approach completed in English, Portuguese, and Spanish immediately after About Lucineia.
 - Four consistent learning pillars were implemented: Learning Through Play, Creative Activities, Language & Communication, and Movement & Exploration, with localized copy and matching brand-color icons.
 - The Learning Approach is mobile-first with one card per row and changes to a readable 2-by-2 grid from the existing 700px breakpoint. It contains no CTA, photo, carousel, or horizontal scrolling.
 - No unconfirmed methodology, formal curriculum, certification, guaranteed development claim, routine, meal, screen-use, or outdoor-play claim was added.
+- The real Lucineia Fernandes photo at `assets/images/Educadora/Lu.png` replaced the temporary About illustration in EN/PT/ES without changing the About copy or layout.
+- Our Space & Daily Life completed in English, Portuguese, and Spanish immediately after Learning Approach using an asymmetric editorial photo mosaic.
+- Three real client-provided WebP images are used: `assets/images/our-space/space-main.webp`, `activity.webp`, and `daily-life.webp`. No stock, generated, or cross-client images were used.
+- All new below-the-fold photos include intrinsic dimensions, localized descriptive alt text, `loading="lazy"`, and `decoding="async"`.
 
 ## NEXT STEP
 
-`Build Our Space / Daily Life section`
+`Build Google Reviews section`
