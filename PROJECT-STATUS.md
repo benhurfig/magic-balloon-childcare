@@ -12,7 +12,7 @@ Magic Balloon Childcare
 
 ## CURRENT PHASE
 
-Header, Hero, Trust Strip, Monthly Bulletin, About Lucineia, Learning Approach, Our Space & Daily Life, Google Reviews, FAQ, and Final Family Request CTA complete; Cloudflare Pages deployed and production DNS propagating
+Header, Hero, Trust Strip, Monthly Bulletin, About Lucineia, Learning Approach, Our Space & Daily Life, Google Reviews, FAQ, Final Family Request CTA, and Local SEO / Framingham complete; Cloudflare Pages deployed and production DNS propagating
 
 ## ARCHITECTURE
 
@@ -64,7 +64,6 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Regenerate or edit all logo and brand image assets to display `Magic Balloon Childcare`; their existing filenames and image content remain unchanged for now.
 - GA4 Measurement ID (`G-XXXXXXXXXX` is intentionally inactive).
 - Final page content and final SEO copy.
-- Local SEO content.
 - Legal copy and localized legal-page architecture.
 - Local SEO pages and reviews.
 - Search Console and Analytics deployment.
@@ -148,7 +147,12 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - The Final CTA explains the process in three steps: child details, care needs, and requesting a family visit, without implying automatic enrollment or guaranteed availability.
 - The primary Family Request link opens SmartMate in a new tab and is tracked as `family_request_click` with `cta_location`, `page_language`, and `link_url` when Analytics consent has been granted.
 - A secondary localized SMS option uses `sms:+17744279253` and is tracked as `text_click` from `final_cta`.
+- Local SEO / Framingham section completed in English, Portuguese, and Spanish after the Final Family Request CTA.
+- Framingham, MA is the only city used in this phase; nearby cities remain pending validation and were not added.
+- The public location remains city-level only. No residential address, apartment number, precise map, coordinates, or invented service area was published.
+- The confirmed Google Business Profile at `https://share.google/24JgvSf33IDr733KY` is connected with localized CTAs and consent-gated `google_profile_click` tracking from `local_seo`.
+- No new `LocalBusiness` structured data was created.
 
 ## NEXT STEP
 
-`Build Local SEO / Framingham section`
+`Build Footer`
