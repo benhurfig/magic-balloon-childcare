@@ -23,14 +23,14 @@
 
   const loadAnalytics = () => {
     const id = config.ga4MeasurementId;
-    if (!id || id === "G-XXXXXXXXXX" || document.querySelector("[data-google-analytics]")) return;
+    if (!/^G-[A-Z0-9]+$/.test(id || "") || document.querySelector("[data-google-analytics]")) return;
     const script = document.createElement("script");
     script.async = true;
     script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(id)}`;
     script.dataset.googleAnalytics = "";
     document.head.appendChild(script);
     window.gtag("js", new Date());
-    window.gtag("config", id);
+    window.gtag("config", id, { transport_type: "beacon" });
   };
 
   const applyChoice = (accepted) => {

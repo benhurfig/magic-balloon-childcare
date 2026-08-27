@@ -1,7 +1,7 @@
 "use strict";
 
 window.MAGIC_BALLOON_CONFIG = Object.freeze({
-  ga4MeasurementId: "G-XXXXXXXXXX",
+  ga4MeasurementId: "G-16V53W7M0S",
   phone: "+17744279253",
   sms: "sms:+17744279253",
   instagram: "https://www.instagram.com/magicballoonchildcare/",

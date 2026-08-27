@@ -6,6 +6,7 @@
     window.gtag("event", name, {
       page_path: window.location.pathname,
       page_language: document.documentElement.lang,
+      transport_type: "beacon",
       ...parameters
     });
   };
