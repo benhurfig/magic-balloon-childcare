@@ -12,7 +12,7 @@ Magic Balloon Childcare
 
 ## CURRENT PHASE
 
-Header, Hero, Trust Strip, Monthly Bulletin, About Lucineia, Learning Approach, Our Space & Daily Life, Google Reviews, FAQ, Final Family Request CTA, and Local SEO / Framingham complete; Cloudflare Pages deployed and production DNS propagating
+The principal Home structure is complete: Header, Hero, Trust Strip, Monthly Bulletin, About Lucineia, Learning Approach, Our Space & Daily Life, Google Reviews, FAQ, Final Family Request CTA, Local SEO / Framingham, and Footer; Cloudflare Pages deployed and production DNS propagating
 
 ## ARCHITECTURE
 
@@ -152,7 +152,12 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - The public location remains city-level only. No residential address, apartment number, precise map, coordinates, or invented service area was published.
 - The confirmed Google Business Profile at `https://share.google/24JgvSf33IDr733KY` is connected with localized CTAs and consent-gated `google_profile_click` tracking from `local_seo`.
 - No new `LocalBusiness` structured data was created.
+- Final Footer completed in English, Portuguese, and Spanish with localized navigation, Family Request anchor, contact details, Google Business Profile, Instagram, real language routes, existing legal routes, and automatic copyright year.
+- Cookie Settings is permanently integrated into the Footer and reopens the existing consent panel so visitors can change Accept/Decline choices without reloading the page; no fixed Cookie Settings control remains in the viewport.
+- Footer interactions use the existing consent-gated analytics architecture for phone, text, email, Google Business, Instagram, navigation, and language events with `cta_location: "footer"`.
+- The Footer uses the existing standalone balloon icon with a textual `Magic Balloon Childcare` wordmark. Logo assets that may still display the former `Ballon` spelling remain pending correction and are not shown in the Footer.
+- The principal Home structure is now complete.
 
 ## NEXT STEP
 
-`Build Footer`
+`Full Home QA: SEO, mobile, conversion, accessibility and performance`

@@ -4,9 +4,9 @@
   const storageKey = "magicBalloonCookieConsent";
   const config = window.MAGIC_BALLOON_CONFIG || {};
   const copy = {
-    "en-US": { text: "We use optional analytics cookies to improve the website.", accept: "Accept analytics", reject: "Decline", settings: "Cookie settings", label: "Cookie consent" },
-    "pt-BR": { text: "Usamos cookies opcionais de análise para melhorar o website.", accept: "Aceitar analytics", reject: "Recusar", settings: "Configurar cookies", label: "Consentimento de cookies" },
-    es: { text: "Usamos cookies opcionales de análisis para mejorar el sitio web.", accept: "Aceptar analytics", reject: "Rechazar", settings: "Configurar cookies", label: "Consentimiento de cookies" }
+    "en-US": { text: "We use optional analytics cookies to improve the website.", accept: "Accept analytics", reject: "Decline", settings: "Cookie Settings", label: "Cookie consent" },
+    "pt-BR": { text: "Usamos cookies opcionais de análise para melhorar o website.", accept: "Aceitar analytics", reject: "Recusar", settings: "Configurações de Cookies", label: "Consentimento de cookies" },
+    es: { text: "Usamos cookies opcionales de análisis para mejorar el sitio web.", accept: "Aceptar analytics", reject: "Rechazar", settings: "Configuración de Cookies", label: "Consentimiento de cookies" }
   }[document.documentElement.lang] || null;
 
   window.dataLayer = window.dataLayer || [];
