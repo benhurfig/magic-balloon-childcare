@@ -184,7 +184,7 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - The About final CTA opens the official SmartMate Family Request in a new tab and uses `family_request_click` with `cta_location: about_final_cta` after Analytics consent.
 - Home Header and Footer About links now point to the localized About pages; the Home's internal About block and Hero Learn More anchor remain unchanged.
 - The sitemap contains all three About URLs with `en`, `pt-BR`, `es`, and `x-default` alternates. Robots required no change and no Schema, Search Console, index request, or local page was added.
-- Responsive and functional QA passed at 375px, 430px, 700px, 980px, and 1440px in EN/PT/ES with no horizontal overflow. Header, mobile menu, language continuity, localized legal links, Cookie Settings, optimized Hero image, shared GA4 loading, and Family Request tracking attributes were verified.
+- Responsive and functional QA passed at 375px, 430px, 700px, 980px, and 1440px in EN/PT/ES with no horizontal overflow. Header, mobile menu, language continuity, localized legal links, Cookie Settings, and the optimized Hero image were verified. All three production routes return HTTP 200; GA4 Realtime confirmed the three localized About page views and `family_request_click` from the final CTA.
 - P2 — ABOUT PAGE — IMPLEMENTED — AWAITING USER APPROVAL.
 
 ## NEXT STEP
