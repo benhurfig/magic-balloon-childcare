@@ -12,7 +12,7 @@ Magic Balloon Childcare
 
 ## CURRENT PHASE
 
-The principal Home structure and controlled final-fixes pass are complete. The final Local Area section is implemented and the Home is tested, approved, and frozen. Privacy Policy and Terms of Service are implemented in English, Portuguese, and Spanish and are awaiting user approval.
+The principal Home structure and controlled final-fixes pass are complete. The final Local Area section is implemented and the Home is tested, approved, and frozen. Privacy Policy and Terms of Service are implemented in English, Portuguese, and Spanish. GA4 is configured, consent-gated, and validated in Realtime.
 
 ## ARCHITECTURE
 
@@ -62,10 +62,9 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 
 - Local folder still uses the former `Magic Ballon Childcare` spelling and must not be renamed during active development.
 - Regenerate or edit all logo and brand image assets to display `Magic Balloon Childcare`; their existing filenames and image content remain unchanged for now.
-- GA4 Measurement ID (`G-XXXXXXXXXX` is intentionally inactive).
 - Final page content and final SEO copy.
 - Local SEO pages and reviews.
-- Search Console and Analytics deployment.
+- Search Console deployment.
 - Replace the current Open Graph image with an approved asset that visibly spells `Magic Balloon Childcare`; the only current OG artwork still shows the former `Magic Ballon Childcare` spelling. **PENDING ASSET REPLACEMENT**.
 - Hero visual and semantic order differ at mobile widths. The current approved visual behavior must remain unchanged; semantic alignment is a LOW/MEDIUM future improvement.
 
@@ -169,7 +168,16 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - The existing Local SEO / Framingham section was refined in EN/PT/ES without creating a duplicate block. It now communicates the Framingham location, convenience near Route 9, and welcomes families from Ashland, Natick, Marlborough, Holliston, and nearby communities without implying a physical location outside Framingham.
 - The Local Area CTA uses the established `#family-request` flow with `data-track="cta"` and `data-location="local_seo"`. The official Google Business Profile link remains unchanged in the Footer.
 - HOME — TESTED, APPROVED, FROZEN.
+- GA4 configured on August 27, 2026 under the `MateGrowth` account (account ID `388380054`) using the dedicated `Magic Balloon Childcare` property (property ID `551927456`).
+- The dedicated Web Data Stream is `Magic Balloon Childcare Website` (stream ID `15514615938`) for `https://www.magicballoonchildcare.com`, with Measurement ID `G-16V53W7M0S` centralized in `assets/js/config.js`.
+- Consent Mode remains denied by default for Analytics and advertising. GA4 loads dynamically only after `Accept analytics`; `Decline` keeps GA4 blocked while the website remains fully functional, and Footer Cookie Settings lets visitors change their choice.
+- Production coverage was validated after consent across `/en/`, `/pt/`, `/es/`, `/privacy/`, `/terms/`, `/pt/privacy/`, `/pt/terms/`, `/es/privacy/`, and `/es/terms/` using the shared analytics architecture.
+- Realtime validation confirmed active users, all nine page titles/routes, `page_view`, `cta_click`, `family_request_click`, `phone_click`, `text_click`, `google_profile_click`, `instagram_click`, and `language_change`. SmartMate was not submitted, and no phone call or SMS was completed.
+- Existing event parameters remain centralized and consent-gated: `cta_location`, `page_language`, `page_path`, and `link_url`. Beacon transport was added to custom events and GA configuration so navigation and language-change events can be delivered reliably before page navigation.
+- DebugView was not enabled because permanent production debug mode was unnecessary; validation used the published site, Realtime, browser behavior, and the consent/load checks instead.
+- No JavaScript errors, incorrect Measurement ID, duplicate GA ID, unconditional GA script, or Privacy/Terms conflict was found during validation.
+- GA4 — TESTED / VALIDATED.
 
 ## NEXT STEP
 
-`HOME — TESTED, APPROVED, FROZEN`
+`P2 — About Page`
