@@ -12,7 +12,7 @@ Magic Balloon Childcare
 
 ## CURRENT PHASE
 
-Header, Hero, Trust Strip, Monthly Bulletin, About Lucineia, Learning Approach, and Our Space & Daily Life complete; Cloudflare Pages deployed and production DNS propagating
+Header, Hero, Trust Strip, Monthly Bulletin, About Lucineia, Learning Approach, Our Space & Daily Life, and Google Reviews complete; Cloudflare Pages deployed and production DNS propagating
 
 ## ARCHITECTURE
 
@@ -56,7 +56,7 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Framingham, MA
 - Phone/SMS: `+1 774-427-9253`
 - Instagram: `https://www.instagram.com/magicballoonchildcare/`
-- Google Business: `https://share.google/8fcb4kHO6Of0jBol9`
+- Google Business: `https://share.google/24JgvSf33IDr733KY`
 
 ## PENDING
 
@@ -65,7 +65,7 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - GA4 Measurement ID (`G-XXXXXXXXXX` is intentionally inactive).
 - Family Request URL.
 - Final page content and final SEO copy.
-- Reviews, FAQ, Local SEO, and Final CTA content.
+- FAQ, Local SEO, and Final CTA content.
 - Legal copy and localized legal-page architecture.
 - Local SEO pages and reviews.
 - Search Console and Analytics deployment.
@@ -134,7 +134,12 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Our Space & Daily Life completed in English, Portuguese, and Spanish immediately after Learning Approach using an asymmetric editorial photo mosaic.
 - Three real client-provided WebP images are used: `assets/images/our-space/space-main.webp`, `activity.webp`, and `daily-life.webp`. No stock, generated, or cross-client images were used.
 - All new below-the-fold photos include intrinsic dimensions, localized descriptive alt text, `loading="lazy"`, and `decoding="async"`.
+- Google Reviews section completed in English, Portuguese, and Spanish immediately after Our Space using three real 5-star reviews from Danalie Thomas, Angelica Cecilia, and Jessica Ferreira.
+- Jessica Ferreira's Portuguese review remains original on PT and is clearly labeled as translated from Portuguese on EN and ES. The current GBP URL is `https://share.google/24JgvSf33IDr733KY`.
+- The aggregate 4.5 rating is intentionally not highlighted while a reported mistaken review correction remains pending; no 5.0 aggregate claim was made.
+- No Review or AggregateRating structured data was implemented.
+- Each language page links the populated Reviews stylesheet with a version identifier so an earlier cached empty `reviews.css` cannot mask the new section design.
 
 ## NEXT STEP
 
-`Build Google Reviews section`
+`Build FAQ section`
