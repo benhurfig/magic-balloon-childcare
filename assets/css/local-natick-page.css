@@ -1,0 +1,4 @@
+.natick-page { background: var(--color-cloud-white); color: var(--color-navy); }
+.natick-page .framingham-hero { background: linear-gradient(135deg, #f4f0ff 0%, #fff 56%, #eafafa 100%); }
+.natick-page .framingham-voucher { background: linear-gradient(135deg, #e8fbf8, #fff); }
+.natick-page .framingham-section--navy { background: linear-gradient(135deg, var(--color-navy), #443b76); }
