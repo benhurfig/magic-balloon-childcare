@@ -1,0 +1,16 @@
+.marlborough-page {
+  background: var(--color-cloud-white);
+  color: var(--color-navy);
+}
+
+.marlborough-page .framingham-hero {
+  background: linear-gradient(135deg, #eef8ff 0%, #fff 56%, #fff5e4 100%);
+}
+
+.marlborough-page .framingham-voucher {
+  background: linear-gradient(135deg, #edf8ff, #fff);
+}
+
+.marlborough-page .framingham-section--navy {
+  background: linear-gradient(135deg, var(--color-navy), #34547c);
+}

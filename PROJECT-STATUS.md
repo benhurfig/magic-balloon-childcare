@@ -234,7 +234,15 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - The sitemap includes all three Ashland URLs with `en`, `pt-BR`, `es`, and `x-default` alternates. No Schema, Search Console work, sitemap submission, indexing request, Marlborough page, or Holliston page was added.
 - Responsive and functional QA passed at 375px, 430px, 700px, 980px, and 1440px in EN/PT/ES with no horizontal overflow. One H1, five localized FAQ items, mobile menu, language continuity, Framingham disclosure, optimized images, localized legal links, Family Request, and internal navigation were verified without browser console errors.
 - P8 — ASHLAND LOCAL SEO PAGE — IMPLEMENTED — AWAITING USER APPROVAL.
+- P9 Local SEO Page 04 for Marlborough implemented at `/en/daycare-near-marlborough-ma/`, `/pt/daycare-near-marlborough-ma/`, and `/es/daycare-near-marlborough-ma/` with localized titles, descriptions, canonicals, hreflang, and one H1 per page.
+- Magic Balloon Childcare remains physically located in Framingham. Marlborough is presented only through transparent `near Marlborough` and `families from Marlborough` language, with no Marlborough address, location, office, branch, map, distance, route, or travel-time claim.
+- The page is differentiated from Framingham, Natick, and Ashland through its own weekly-routine context for families who travel toward Framingham and a dedicated Full-Time Monday–Friday section focused on consistent care and family planning.
+- The page reuses optimized real project images, Jessica Ferreira's validated review with identified translations, and the shared Header, Footer, language selector, floating SMS, Cookie Consent, consent-gated GA4, and analytics architecture.
+- Hero and final CTAs open the official SmartMate Family Request with `family_request_click` locations `marlborough_hero` and `marlborough_final_cta`; internal Framingham, About, Child Care, Enrollment, and Reviews links use the existing navigation tracking.
+- The sitemap includes all three Marlborough URLs with `en`, `pt-BR`, `es`, and `x-default` alternates. No Schema, Search Console work, sitemap submission, indexing request, or Holliston page was added.
+- Responsive and functional QA passed at 375px, 430px, 700px, 980px, and 1440px in EN/PT/ES with no horizontal overflow. One H1, the dedicated Full-Time section, five localized FAQ items, mobile menu, language continuity, Framingham disclosure, optimized images, localized legal links, Family Request, and internal navigation were verified without browser console errors.
+- P9 — MARLBOROUGH LOCAL SEO PAGE — IMPLEMENTED — AWAITING USER APPROVAL.
 
 ## NEXT STEP
 
-`P9 — Evaluate Marlborough Local SEO Page`
+`STOP AND REVIEW LOCAL SEO SET`
