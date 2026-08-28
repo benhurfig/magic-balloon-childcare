@@ -1,0 +1,16 @@
+.holliston-page {
+  background: var(--color-cloud-white);
+  color: var(--color-navy);
+}
+
+.holliston-page .framingham-hero {
+  background: linear-gradient(135deg, #fff2f7 0%, #fff 56%, #edfbfa 100%);
+}
+
+.holliston-page .framingham-voucher {
+  background: linear-gradient(135deg, #fff3f7, #f2fcfb);
+}
+
+.holliston-page .framingham-section--navy {
+  background: linear-gradient(135deg, var(--color-navy), #3d4867);
+}
