@@ -253,7 +253,19 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 
 ## NEXT STEP
 
-`FINAL WEBSITE + LOCAL SEO AUDIT`
+`SEARCH CONSOLE — MAGIC BALLOON CHILDCARE`
+
+## SCHEMA — IMPLEMENTED / VALIDATED
+
+- Safe JSON-LD `@graph` structured data is implemented on 27 indexable EN/PT/ES pages: Home, About, Child Care, Enrollment, Reviews, Framingham, Natick, Ashland, and Marlborough.
+- One consistent `Organization` uses `https://www.magicballoonchildcare.com/#organization`; one consistent `WebSite` uses `https://www.magicballoonchildcare.com/#website`.
+- Every covered page has a canonical-aligned `WebPage` with the correct `en-US`, `pt-BR`, or `es` language. All internal pages include localized `BreadcrumbList`; near-city pages use Home → Framingham → nearby city.
+- About pages additionally identify Lucineia Fernandes as a `Person` with the confirmed `Child Care Provider` job title and the official Organization as `worksFor`.
+- The official public `magic-balloon-logo-primary.png` logo is used and returns HTTP 200. Official Instagram and Google Business Profile URLs are the only `sameAs` values.
+- Local validation parsed all 27 JSON-LD documents with zero syntax, ID, canonical, language, breadcrumb, duplicate-Organization, or forbidden-property failures.
+- `Review`, `AggregateRating`, `FAQPage`, address, `streetAddress`, geo, coordinates, opening hours, prices, capacity, credentials, and unconfirmed service areas are intentionally absent.
+- Holliston remains `noindex,follow`, outside the sitemap, and without Schema expansion. Legal pages remain unchanged; GA4, consent, robots, sitemap, visual content, GBP, and Family Request were not altered.
+- Search Console, sitemap submission, and indexing requests remain pending and were not started.
 
 ## BRAND ASSET KIT — MAGIC BALLOON
 
@@ -280,5 +292,5 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Legal sitemap hreflang was made reciprocal. Cookie consent gained modal semantics, keyboard focus containment, Escape handling for reopened settings, and focus restoration.
 - Page-specific CSS is loaded only by the corresponding page family; shared CSS remains global.
 - The original 512px balloon favicon remains preserved; a 256px optimized `magic-balloon-small.png` derivative is used for intro and small decorative placements.
-- The current OG artwork still visibly spells `Magic Ballon Childcare`; no approved corrected asset exists in the project, so social metadata expansion remains blocked pending replacement art.
-- Search Console, sitemap submission, indexing requests, and Schema remain pending and were not started.
+- The approved Open Graph artwork now visibly spells `Magic Balloon Childcare` and is integrated with the corrected `magic-balloon-*` metadata filenames.
+- Search Console, sitemap submission, and indexing requests remain pending and were not started.
