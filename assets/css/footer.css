@@ -105,70 +105,6 @@
   transform: translateX(0.18rem);
 }
 
-.site-footer__contact-actions {
-  display: flex;
-  min-height: 2.75rem;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem 0.85rem;
-  color: rgb(247 249 252 / 78%);
-}
-
-.site-footer__contact-number {
-  font-weight: 600;
-}
-
-.site-footer__contact-options {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-}
-
-.site-footer__contact-option {
-  color: var(--color-light-blue);
-  font-weight: 700;
-  text-decoration: none;
-  transition: color var(--transition-fast);
-}
-
-.site-footer__contact-option:hover {
-  color: var(--color-pink);
-}
-
-.site-footer__contact-divider {
-  color: rgb(247 249 252 / 30%);
-}
-
-.site-footer__get-started {
-  padding: 1.35rem;
-  border: 1px solid rgb(255 255 255 / 11%);
-  border-radius: var(--radius-medium);
-  background: rgb(255 255 255 / 5%);
-}
-
-.site-footer__family-link {
-  display: inline-flex;
-  width: 100%;
-  min-height: 4rem;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 1.35rem;
-  border-radius: var(--radius-pill);
-  color: #fff;
-  background: var(--color-pink);
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.35;
-  text-align: center;
-  text-decoration: none;
-  transition: background var(--transition-fast), transform var(--transition-fast);
-}
-
-.site-footer__family-link:hover {
-  background: #e84673;
-  transform: translateY(-0.1rem);
-}
-
 .site-footer__contact-icon {
   display: grid;
   width: 2rem;
@@ -279,10 +215,6 @@
     grid-column: 1 / -1;
   }
 
-  .site-footer__get-started {
-    padding: 1.5rem;
-  }
-
   .site-footer__utility {
     grid-template-columns: 1fr auto;
     align-items: center;
@@ -300,8 +232,8 @@
 
 @media (min-width: 980px) {
   .site-footer__main {
-    grid-template-columns: minmax(15rem, 1.4fr) minmax(9rem, 0.75fr) minmax(13rem, 1fr) minmax(13rem, 1fr);
-    grid-template-areas: "brand quick started contact";
+    grid-template-columns: minmax(15rem, 1.4fr) minmax(9rem, 0.75fr) minmax(13rem, 1fr);
+    grid-template-areas: "brand quick contact";
     gap: clamp(2rem, 4vw, 4rem);
   }
 
@@ -311,11 +243,6 @@
 
   .site-footer__quick-links {
     grid-area: quick;
-  }
-
-  .site-footer__get-started {
-    grid-area: started;
-    align-self: start;
   }
 
   .site-footer__contact {
@@ -330,8 +257,7 @@
   }
 
   .site-footer__link:hover,
-  .site-footer__contact-link:hover,
-  .site-footer__family-link:hover {
+  .site-footer__contact-link:hover {
     transform: none;
   }
 }
