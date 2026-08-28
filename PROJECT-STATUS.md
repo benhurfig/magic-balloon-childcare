@@ -279,6 +279,21 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Supporting assets: transparent watermark 1400×700 and brand pattern 1200×1200.
 - Home EN/PT/ES Open Graph and Twitter metadata now use the new `magic-balloon-*` filenames; no public code reference remains to the former `magic-ballon-og-image.png` or `magic-ballon-favicon.*` names.
 
+## SEARCH CONSOLE — CONFIGURED / INITIAL VALIDATION
+
+- Search Console was reviewed on August 28, 2026 using the verified Domain Property `magicballoonchildcare.com` in the authenticated account `benhurfig@gmail.com`. Ownership is verified through the domain-name provider.
+- The separate URL-prefix property `https://www.magicballoonchildcare.com/` is not accessible to the authenticated account: the property selector reports no matching property and its direct settings URL reports that the account does not have access. No duplicate property was created and no DNS or Cloudflare setting was changed.
+- The official sitemap `https://www.magicballoonchildcare.com/sitemap.xml` was submitted successfully to the Domain Property on August 28, 2026. The initial table briefly reported `Couldn't fetch`, while subsequent URL Inspection results already detected the submitted sitemap; processing remains in progress.
+- Public validation confirmed that the sitemap returns HTTP 200 as XML, contains 33 URLs, and excludes Holliston. `robots.txt` returns HTTP 200, allows general crawling, and declares the official sitemap URL.
+- Home EN is indexed with successful smartphone crawl, indexing allowed, matching user/Google canonical, and HTTPS. Home ES is also indexed. Home PT was not yet indexed at the time of inspection and is left to sitemap/hreflang discovery rather than manual submission.
+- Manual priority indexing was successfully requested once for EN Child Care, Enrollment, About, and Reviews. Each URL was added to Google's priority crawl queue; repeated requests were not made.
+- EN Framingham and the tested Natick URL were rejected by live inspection because the published responses contain a `noindex` robots meta tag and declare the EN Home as canonical. Crawl and fetch succeeded, but indexing is explicitly disallowed. No further local-page requests were made for Ashland or Marlborough until this shared local-page configuration is reviewed. Holliston remains intentionally excluded and was not requested.
+- Search Console Page Indexing, Performance, HTTPS, Breadcrumbs, and Crawl Stats reports are still processing or have no data yet. Manual Actions and Security Issues both report no issues detected.
+- Search Console's Settings screen temporarily reported no robots file even though the public `robots.txt` endpoint is healthy; this is recorded as fresh-property processing rather than a confirmed website failure.
+- No website, Schema, GA4, Google Business Profile, Family Request, redirect, DNS, or Cloudflare configuration was changed during this Search Console step.
+- Pending: restore access to the existing `https://www.magicballoonchildcare.com/` URL-prefix property for `benhurfig@gmail.com`, wait for sitemap/report processing, and decide in a dedicated technical correction whether the indexable local pages should remove `noindex` and use self-referencing canonicals before requesting their indexing.
+- SEARCH CONSOLE — SITEMAP SUBMITTED / CORE URLS QUEUED / LOCAL SEO INDEXING BLOCKED BY NOINDEX.
+
 
 ## FINAL PRE-SEARCH-CONSOLE FIXES — IMPLEMENTED — AWAITING VALIDATION
 
