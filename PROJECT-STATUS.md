@@ -12,7 +12,7 @@ Magic Balloon Childcare
 
 ## CURRENT PHASE
 
-The principal Home structure and controlled final-fixes pass are complete, tested, approved, and frozen. Privacy Policy and Terms of Service are implemented in English, Portuguese, and Spanish. GA4 is configured, consent-gated, and validated. P2 About is implemented and validated. P3 Child Care is implemented in all three languages and awaiting user approval.
+The principal Home structure and controlled final-fixes pass are complete, tested, approved, and frozen. Privacy Policy and Terms of Service are validated. GA4 is consent-gated and validated. P2 About and P3 Child Care are validated. P4 Enrollment is implemented in all three languages and awaiting user approval.
 
 ## ARCHITECTURE
 
@@ -196,7 +196,13 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - The sitemap contains all three Child Care URLs with matching hreflang alternates. No Schema, Search Console work, sitemap submission, indexing request, local page, or P4 work was started.
 - Production QA confirmed HTTP 200 for all three Child Care routes after deployment. Canonical, hreflang, active navigation, localized language continuity, FAQ interaction, Cookie Settings, responsive overflow, and the shared GA4 script with Measurement ID `G-16V53W7M0S` were verified on the published site.
 - P3 — CHILD CARE PAGE — IMPLEMENTED — AWAITING USER APPROVAL.
+- P4 Enrollment / Family Request page implemented at `/en/enrollment/`, `/pt/enrollment/`, and `/es/enrollment/` with localized SEO, canonical URLs, complete hreflang sets, and one H1 per page.
+- The page communicates current Full-Time openings without a fixed count, Monday–Friday care, private pay, Child Care Voucher acceptance, the three-step Family Request process, availability disclaimer, family visits after 5:00 PM, preparation guidance, and a concise three-question FAQ.
+- Hero and final CTAs open the official SmartMate URL in a new tab and use `family_request_click` with `enrollment_hero` or `enrollment_final_cta`. Secondary SMS uses `text_click` from `enrollment_final_cta`.
+- Enrollment reuses the shared Header, mobile menu, language selector, Footer, floating SMS, Cookie Consent, GA4, and analytics event architecture. Home Header Start Here links connect to the localized Enrollment routes without redesigning frozen sections.
+- The sitemap contains all three Enrollment URLs with `en`, `pt-BR`, `es`, and `x-default` alternates. No booking system, Schema, Search Console work, index request, local page, or P5 work was added.
+- P4 — ENROLLMENT PAGE — IMPLEMENTED — AWAITING USER APPROVAL.
 
 ## NEXT STEP
 
-`P4 — Enrollment / Family Request Page`
+`P5 — Reviews Page`

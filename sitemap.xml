@@ -82,4 +82,25 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.magicballoonchildcare.com/es/child-care/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.magicballoonchildcare.com/en/child-care/"/>
   </url>
+  <url>
+    <loc>https://www.magicballoonchildcare.com/en/enrollment/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.magicballoonchildcare.com/en/enrollment/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.magicballoonchildcare.com/pt/enrollment/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.magicballoonchildcare.com/es/enrollment/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.magicballoonchildcare.com/en/enrollment/"/>
+  </url>
+  <url>
+    <loc>https://www.magicballoonchildcare.com/pt/enrollment/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.magicballoonchildcare.com/en/enrollment/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.magicballoonchildcare.com/pt/enrollment/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.magicballoonchildcare.com/es/enrollment/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.magicballoonchildcare.com/en/enrollment/"/>
+  </url>
+  <url>
+    <loc>https://www.magicballoonchildcare.com/es/enrollment/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.magicballoonchildcare.com/en/enrollment/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.magicballoonchildcare.com/pt/enrollment/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.magicballoonchildcare.com/es/enrollment/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.magicballoonchildcare.com/en/enrollment/"/>
+  </url>
 </urlset>
