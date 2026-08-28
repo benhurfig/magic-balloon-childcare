@@ -17,6 +17,7 @@
 @import url("./about-page.css");
 @import url("./child-care-page.css");
 @import url("./enrollment-page.css");
+@import url("./reviews-page.css");
 
 .floating-contact {
   position: fixed;
