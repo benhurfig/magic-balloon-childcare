@@ -51,6 +51,7 @@
     panel.className = "cookie-consent";
     panel.setAttribute("role", "dialog");
     panel.setAttribute("aria-label", copy.label);
+    panel.setAttribute("aria-modal", "true");
     panel.hidden = true;
     panel.innerHTML = `<p>${copy.text}</p><div class="cookie-consent__actions"><button class="cookie-consent__button" type="button" data-cookie-reject>${copy.reject}</button><button class="cookie-consent__button cookie-consent__button--accept" type="button" data-cookie-accept>${copy.accept}</button></div>`;
     if (settings) settings.textContent = copy.settings;
@@ -59,18 +60,36 @@
     const save = (value) => {
       try { localStorage.setItem(storageKey, value); } catch (error) { /* Storage may be unavailable. */ }
     };
+    let returnFocus = null;
+    const focusable = () => [...panel.querySelectorAll("button:not([disabled]), a[href]")];
+    const closePanel = () => {
+      panel.hidden = true;
+      if (settings) settings.hidden = false;
+      returnFocus?.focus();
+      returnFocus = null;
+    };
     const choose = (accepted) => {
       save(accepted ? "accepted" : "rejected");
       applyChoice(accepted);
-      panel.hidden = true;
-      if (settings) settings.hidden = false;
+      closePanel();
     };
     panel.querySelector("[data-cookie-accept]").addEventListener("click", () => choose(true));
     panel.querySelector("[data-cookie-reject]").addEventListener("click", () => choose(false));
     settings?.addEventListener("click", () => {
+      returnFocus = document.activeElement;
       panel.hidden = false;
       settings.hidden = true;
       panel.querySelector("[data-cookie-reject]").focus();
+    });
+
+    panel.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && returnFocus) { event.preventDefault(); closePanel(); return; }
+      if (event.key !== "Tab") return;
+      const items = focusable();
+      if (!items.length) return;
+      const first = items[0], last = items[items.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
     });
 
     let saved = null;
@@ -80,6 +99,7 @@
       if (settings) settings.hidden = false;
     } else {
       panel.hidden = false;
+      panel.querySelector("[data-cookie-reject]").focus();
     }
   }, { once: true });
 })();

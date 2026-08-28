@@ -29,8 +29,16 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.magicballoonchildcare.com/es/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.magicballoonchildcare.com/privacy/"/>
   </url>
-  <url><loc>https://www.magicballoonchildcare.com/pt/privacy/</loc></url>
-  <url><loc>https://www.magicballoonchildcare.com/es/privacy/</loc></url>
+  <url><loc>https://www.magicballoonchildcare.com/pt/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.magicballoonchildcare.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.magicballoonchildcare.com/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.magicballoonchildcare.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.magicballoonchildcare.com/privacy/"/></url>
+  <url><loc>https://www.magicballoonchildcare.com/es/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.magicballoonchildcare.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.magicballoonchildcare.com/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.magicballoonchildcare.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.magicballoonchildcare.com/privacy/"/></url>
   <url>
     <loc>https://www.magicballoonchildcare.com/terms/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.magicballoonchildcare.com/terms/"/>
@@ -38,8 +46,16 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.magicballoonchildcare.com/es/terms/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.magicballoonchildcare.com/terms/"/>
   </url>
-  <url><loc>https://www.magicballoonchildcare.com/pt/terms/</loc></url>
-  <url><loc>https://www.magicballoonchildcare.com/es/terms/</loc></url>
+  <url><loc>https://www.magicballoonchildcare.com/pt/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.magicballoonchildcare.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.magicballoonchildcare.com/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.magicballoonchildcare.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.magicballoonchildcare.com/terms/"/></url>
+  <url><loc>https://www.magicballoonchildcare.com/es/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.magicballoonchildcare.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.magicballoonchildcare.com/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.magicballoonchildcare.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.magicballoonchildcare.com/terms/"/></url>
   <url>
     <loc>https://www.magicballoonchildcare.com/en/about/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.magicballoonchildcare.com/en/about/"/>
@@ -118,7 +134,4 @@
   <url><loc>https://www.magicballoonchildcare.com/en/daycare-near-marlborough-ma/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.magicballoonchildcare.com/en/daycare-near-marlborough-ma/"/><xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.magicballoonchildcare.com/pt/daycare-near-marlborough-ma/"/><xhtml:link rel="alternate" hreflang="es" href="https://www.magicballoonchildcare.com/es/daycare-near-marlborough-ma/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.magicballoonchildcare.com/en/daycare-near-marlborough-ma/"/></url>
   <url><loc>https://www.magicballoonchildcare.com/pt/daycare-near-marlborough-ma/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.magicballoonchildcare.com/en/daycare-near-marlborough-ma/"/><xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.magicballoonchildcare.com/pt/daycare-near-marlborough-ma/"/><xhtml:link rel="alternate" hreflang="es" href="https://www.magicballoonchildcare.com/es/daycare-near-marlborough-ma/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.magicballoonchildcare.com/en/daycare-near-marlborough-ma/"/></url>
   <url><loc>https://www.magicballoonchildcare.com/es/daycare-near-marlborough-ma/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.magicballoonchildcare.com/en/daycare-near-marlborough-ma/"/><xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.magicballoonchildcare.com/pt/daycare-near-marlborough-ma/"/><xhtml:link rel="alternate" hreflang="es" href="https://www.magicballoonchildcare.com/es/daycare-near-marlborough-ma/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.magicballoonchildcare.com/en/daycare-near-marlborough-ma/"/></url>
-  <url><loc>https://www.magicballoonchildcare.com/en/daycare-near-holliston-ma/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.magicballoonchildcare.com/en/daycare-near-holliston-ma/"/><xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.magicballoonchildcare.com/pt/daycare-near-holliston-ma/"/><xhtml:link rel="alternate" hreflang="es" href="https://www.magicballoonchildcare.com/es/daycare-near-holliston-ma/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.magicballoonchildcare.com/en/daycare-near-holliston-ma/"/></url>
-  <url><loc>https://www.magicballoonchildcare.com/pt/daycare-near-holliston-ma/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.magicballoonchildcare.com/en/daycare-near-holliston-ma/"/><xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.magicballoonchildcare.com/pt/daycare-near-holliston-ma/"/><xhtml:link rel="alternate" hreflang="es" href="https://www.magicballoonchildcare.com/es/daycare-near-holliston-ma/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.magicballoonchildcare.com/en/daycare-near-holliston-ma/"/></url>
-  <url><loc>https://www.magicballoonchildcare.com/es/daycare-near-holliston-ma/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.magicballoonchildcare.com/en/daycare-near-holliston-ma/"/><xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.magicballoonchildcare.com/pt/daycare-near-holliston-ma/"/><xhtml:link rel="alternate" hreflang="es" href="https://www.magicballoonchildcare.com/es/daycare-near-holliston-ma/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.magicballoonchildcare.com/en/daycare-near-holliston-ma/"/></url>
 </urlset>

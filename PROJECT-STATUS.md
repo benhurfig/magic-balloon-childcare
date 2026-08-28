@@ -254,3 +254,19 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 ## NEXT STEP
 
 `FINAL WEBSITE + LOCAL SEO AUDIT`
+
+
+## FINAL PRE-SEARCH-CONSOLE FIXES — IMPLEMENTED — AWAITING VALIDATION
+
+- Home metadata now owns the brand/general proposition; Framingham retains the specific local home-daycare intent.
+- Cloudflare apex redirect now matches both HTTP and HTTPS with a permanent 301, preserves path and query string, and sends traffic to the canonical `www` HTTPS host.
+- Privacy Policy EN/PT/ES now explains consent-gated Google Analytics use.
+- Framingham links contextually to Natick, Ashland, and Marlborough; Holliston is not promoted.
+- Ashland content was enriched and Marlborough content was differentiated around practical Full-Time fit evaluation.
+- Approximate English five-word overlap after the rewrite: Ashland/Natick 29.4%, Ashland/Marlborough 30.6%, and Marlborough/Natick 21.7%; Holliston is excluded from the indexable comparison.
+- Holliston remains public with `noindex,follow` and is excluded from the sitemap pending stronger local value.
+- Legal sitemap hreflang was made reciprocal. Cookie consent gained modal semantics, keyboard focus containment, Escape handling for reopened settings, and focus restoration.
+- Page-specific CSS is loaded only by the corresponding page family; shared CSS remains global.
+- The original 512px balloon favicon remains preserved; a 256px optimized `magic-balloon-small.png` derivative is used for intro and small decorative placements.
+- The current OG artwork still visibly spells `Magic Ballon Childcare`; no approved corrected asset exists in the project, so social metadata expansion remains blocked pending replacement art.
+- Search Console, sitemap submission, indexing requests, and Schema remain pending and were not started.
