@@ -177,6 +177,14 @@
 
 .local-seo__action {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+.local-seo__action > a:not(.button) {
+  color: var(--color-navy);
+  font-weight: 700;
 }
 
 .local-seo__cta {

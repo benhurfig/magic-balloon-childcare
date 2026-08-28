@@ -11,13 +11,14 @@
 @import url("./reviews.css");
 @import url("./faq.css");
 @import url("./final-cta.css");
-@import url("./local-seo.css");
+@import url("./local-seo.css?v=20260828-2");
 @import url("./footer.css?v=20260828-1");
 @import url("./legal.css");
 @import url("./about-page.css");
 @import url("./child-care-page.css");
 @import url("./enrollment-page.css");
 @import url("./reviews-page.css");
+@import url("./local-framingham-page.css?v=20260828-1");
 
 .floating-contact {
   position: fixed;

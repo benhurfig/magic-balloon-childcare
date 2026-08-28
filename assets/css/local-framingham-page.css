@@ -1,0 +1,51 @@
+.framingham-page { background: var(--color-cloud-white); color: var(--color-navy); }
+.framingham-hero { padding: clamp(3rem, 7vw, 6rem) 0; background: linear-gradient(135deg, #eef9ff 0%, #fff 58%, #fff8e8 100%); }
+.framingham-hero__grid { display: grid; gap: 1.5rem; }
+.framingham-hero h1 { max-width: 15ch; margin: 0; font-size: clamp(2.45rem, 9vw, 5rem); line-height: 1.02; }
+.framingham-hero__visual { overflow: hidden; border: .5rem solid #fff; border-radius: 45% 55% 46% 54% / 50% 42% 58% 50%; box-shadow: 0 1.5rem 3.5rem rgb(31 42 68 / 14%); }
+.framingham-hero__visual img { width: 100%; aspect-ratio: 1.08; object-fit: cover; }
+.framingham-hero__copy { max-width: 42rem; color: rgb(31 42 68 / 78%); font-size: 1.05rem; line-height: 1.75; }
+.framingham-hero__trust { color: var(--color-navy); font-weight: 700; line-height: 1.7; }
+.framingham-actions { display: flex; flex-wrap: wrap; gap: .8rem; }
+.framingham-actions .button--secondary { border: 2px solid var(--color-navy); color: var(--color-navy); background: transparent; }
+.framingham-section { padding: clamp(3.8rem, 8vw, 7rem) 0; }
+.framingham-section--white { background: #fff; }
+.framingham-section--soft { background: #eef8fb; }
+.framingham-section--navy { color: #fff; background: linear-gradient(135deg, var(--color-navy), #31396d); }
+.framingham-heading { max-width: 48rem; margin-bottom: 2rem; }
+.framingham-heading h2, .framingham-split h2, .framingham-final h2 { margin: .65rem 0 1rem; font-size: clamp(2rem, 6vw, 3.5rem); line-height: 1.08; }
+.framingham-heading p, .framingham-split p { color: rgb(31 42 68 / 74%); line-height: 1.8; }
+.framingham-split { display: grid; gap: 2rem; align-items: center; }
+.framingham-split__visual { overflow: hidden; border-radius: var(--radius-large); box-shadow: 0 1rem 2.5rem rgb(31 42 68 / 12%); }
+.framingham-split__visual img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.framingham-facts, .framingham-learning { display: grid; gap: 1rem; }
+.framingham-card { padding: 1.4rem; border: 1px solid rgb(31 42 68 / 8%); border-radius: var(--radius-medium); background: #fff; box-shadow: 0 .7rem 1.8rem rgb(31 42 68 / 7%); }
+.framingham-card__icon { display: grid; width: 2.75rem; height: 2.75rem; place-items: center; margin-bottom: 1rem; border-radius: 50%; color: #fff; background: var(--color-turquoise); font-family: var(--font-heading); font-weight: 700; }
+.framingham-card:nth-child(2) .framingham-card__icon { background: var(--color-coral, #ff5c8a); }
+.framingham-card:nth-child(3) .framingham-card__icon { color: var(--color-navy); background: var(--color-yellow); }
+.framingham-card:nth-child(4) .framingham-card__icon { background: var(--color-purple); }
+.framingham-card h3 { margin: 0 0 .45rem; font-size: 1.22rem; }
+.framingham-card p { margin: 0; color: rgb(31 42 68 / 70%); line-height: 1.65; }
+.framingham-voucher { padding: clamp(2rem, 6vw, 3.5rem); border-radius: var(--radius-large); background: linear-gradient(135deg, #fff5cf, #fff); box-shadow: 0 1rem 2.5rem rgb(31 42 68 / 8%); }
+.framingham-review { max-width: 52rem; padding: clamp(1.8rem, 5vw, 3rem); border-radius: var(--radius-large); background: #fff; box-shadow: 0 1rem 2.5rem rgb(31 42 68 / 8%); }
+.framingham-review blockquote { margin: 0 0 1rem; font-family: var(--font-heading); font-size: clamp(1.35rem, 4vw, 2rem); line-height: 1.45; }
+.framingham-review cite { font-style: normal; font-weight: 700; }
+.framingham-review__stars { color: var(--color-yellow); letter-spacing: .12em; }
+.framingham-review__links { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; margin-top: 1.5rem; }
+.framingham-review__links a { color: var(--color-navy); font-weight: 700; }
+.framingham-faq { max-width: 52rem; }
+.framingham-final { max-width: 52rem; margin-inline: auto; text-align: center; }
+.framingham-final p { color: rgb(247 249 252 / 78%); line-height: 1.75; }
+.framingham-final .button { margin-top: 1rem; }
+@media (min-width: 700px) {
+  .framingham-facts, .framingham-learning { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .framingham-actions .button { width: auto; }
+}
+@media (min-width: 980px) {
+  .framingham-hero__grid { grid-template-columns: minmax(0, 1.05fr) minmax(22rem, .8fr); align-items: center; gap: clamp(3rem, 7vw, 6rem); }
+  .framingham-hero__visual { grid-column: 2; grid-row: 1 / span 6; }
+  .framingham-split { grid-template-columns: minmax(0, 1fr) minmax(22rem, .82fr); gap: clamp(3rem, 7vw, 6rem); }
+  .framingham-facts { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .framingham-learning { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (prefers-reduced-motion: reduce) { .framingham-page * { scroll-behavior: auto; } }
