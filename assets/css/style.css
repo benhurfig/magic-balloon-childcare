@@ -15,6 +15,7 @@
 @import url("./footer.css");
 @import url("./legal.css");
 @import url("./about-page.css");
+@import url("./child-care-page.css");
 
 .floating-contact {
   position: fixed;

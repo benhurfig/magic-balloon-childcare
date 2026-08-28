@@ -1,0 +1,27 @@
+.child-care-page{padding-top:var(--header-height);overflow:hidden;background:var(--color-cloud-white)}
+.care-hero{padding:3.5rem 0 4rem;background:radial-gradient(circle at 8% 15%,rgb(184 227 255 / 42%),transparent 18rem),radial-gradient(circle at 92% 82%,rgb(47 185 177 / 12%),transparent 18rem),#fff}
+.care-hero__inner,.care-hero__content{display:grid;gap:1.35rem}.care-hero__content{display:contents}
+.care-hero__title{margin:0;color:var(--color-navy);font-size:clamp(2.65rem,11vw,4.8rem);line-height:1;letter-spacing:-.045em}
+.care-hero__description{margin:0;color:var(--color-text-secondary);font-size:clamp(1.03rem,3vw,1.2rem);line-height:1.75}
+.care-hero__trust{margin:0;color:var(--color-navy);font-size:.9rem;font-weight:800;line-height:1.65}
+.care-hero__visual{position:relative;width:min(100%,35rem);margin-inline:auto;padding:.65rem;border-radius:42% 58% 49% 51%/48% 43% 57% 52%;background:#fff;box-shadow:0 1.5rem 3.5rem rgb(31 42 68 / 15%)}
+.care-hero__visual img{width:100%;aspect-ratio:1/1;border-radius:inherit;object-fit:cover}
+.care-section{padding:4rem 0}.care-section--white{background:#fff}.care-section--soft{background:linear-gradient(135deg,rgb(184 227 255 / 22%),rgb(47 185 177 / 8%))}.care-section--navy{color:#fff;background:var(--color-navy)}
+.care-section__header{max-width:48rem;margin-bottom:2rem}.care-section__header h2,.care-split__copy h2,.care-final h2{margin-bottom:1rem;color:var(--color-navy);font-size:clamp(2rem,7vw,3.5rem);line-height:1.08;letter-spacing:-.035em}
+.care-section__header p,.care-split__copy p,.care-card p,.care-learning p,.care-payment p,.care-final p{color:var(--color-text-secondary);line-height:1.75}
+.care-cards,.care-learning-grid,.care-gallery{display:grid;gap:1rem}
+.care-card,.care-learning,.care-payment{padding:1.4rem;border:1px solid rgb(31 42 68 / 9%);border-radius:var(--radius-medium);background:#fff;box-shadow:0 .8rem 2rem rgb(31 42 68 / 7%)}
+.care-card__icon,.care-learning__icon{display:grid;width:2.9rem;height:2.9rem;margin-bottom:1rem;place-items:center;border-radius:50%;color:var(--color-navy);background:rgb(255 200 69 / 34%);font-family:var(--font-heading);font-weight:800}
+.care-card:nth-child(2) .care-card__icon,.care-learning:nth-child(2) .care-learning__icon{background:rgb(47 185 177 / 22%)}
+.care-card:nth-child(3) .care-card__icon,.care-learning:nth-child(3) .care-learning__icon{background:rgb(123 97 255 / 18%)}
+.care-learning:nth-child(4) .care-learning__icon{background:rgb(255 92 138 / 18%)}
+.care-card h3,.care-learning h3{margin-bottom:.5rem;color:var(--color-navy);font-size:1.35rem}.care-card p,.care-learning p{margin:0}
+.care-split{display:grid;gap:2rem}.care-feature{padding:2rem;border-radius:var(--radius-large);background:#fff;box-shadow:var(--shadow-medium)}
+.care-feature__languages{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:1.25rem}.care-feature__languages span{padding:.55rem .9rem;border-radius:var(--radius-pill);color:var(--color-navy);background:rgb(184 227 255 / 32%);font-weight:800}
+.care-commercial{display:grid;gap:1rem}.care-payment h3{margin-bottom:.55rem;color:var(--color-navy);font-size:1.4rem}.care-payment p{margin:0}
+.care-gallery figure{overflow:hidden;margin:0;border-radius:var(--radius-medium);background:#fff;box-shadow:var(--shadow-medium)}
+.care-gallery img{width:100%;aspect-ratio:1.08/1;object-fit:cover}.care-gallery figcaption{padding:1rem;color:var(--color-navy);font-family:var(--font-heading);font-weight:700}
+.care-faq{width:min(100%,54rem);margin-inline:auto}.care-faq .faq-list{margin-top:2rem}
+.care-final{max-width:48rem;margin-inline:auto;text-align:center}.care-final .section-eyebrow,.care-final h2,.care-final p{color:#fff}.care-final .button{margin-top:.75rem;background:var(--color-pink);box-shadow:0 .9rem 2rem rgb(255 92 138 / 22%)}
+@media(min-width:700px){.care-hero,.care-section{padding-block:5.5rem}.care-cards{grid-template-columns:repeat(3,minmax(0,1fr))}.care-learning-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.care-gallery{grid-template-columns:repeat(3,minmax(0,1fr))}.care-commercial{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:980px){.care-hero__inner{grid-template-columns:minmax(0,1.05fr) minmax(22rem,.75fr);align-items:center;gap:4rem}.care-hero__content{display:contents}.care-hero__content .section-eyebrow,.care-hero__title,.care-hero__description,.care-hero__trust{grid-column:1}.care-hero__visual{grid-column:2;grid-row:1/5}.care-split{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:4rem}.care-learning-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
