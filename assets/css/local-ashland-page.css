@@ -1,0 +1,24 @@
+.ashland-page {
+  background: var(--color-cloud-white);
+  color: var(--color-navy);
+}
+
+.ashland-page .framingham-hero {
+  background: linear-gradient(135deg, #fff8e8 0%, #fff 56%, #e9f9f7 100%);
+}
+
+.ashland-page .framingham-voucher {
+  background: linear-gradient(135deg, #fff4dd, #fff);
+}
+
+.ashland-page .framingham-section--navy {
+  background: linear-gradient(135deg, var(--color-navy), #315f69);
+}
+
+.framingham-review__translation {
+  display: block;
+  margin-top: 0.75rem;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  font-style: normal;
+}

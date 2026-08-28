@@ -226,7 +226,15 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - The sitemap includes all three Natick URLs with `en`, `pt-BR`, `es`, and `x-default` alternates. No Schema, Search Console work, sitemap submission, or indexing request was performed.
 - Responsive QA passed at 375px, 430px, 700px, 980px, and 1440px in EN/PT/ES with no horizontal overflow. One H1, five localized FAQ items, mobile menu, language continuity, Framingham disclosure, optimized Hero image, legal links, and the official Family Request destination were verified without browser console errors.
 - P7 — NATICK LOCAL SEO PAGE — IMPLEMENTED — AWAITING USER APPROVAL.
+- P8 Local SEO Page 03 for Ashland implemented at `/en/daycare-near-ashland-ma/`, `/pt/daycare-near-ashland-ma/`, and `/es/daycare-near-ashland-ma/` with localized titles, descriptions, canonicals, hreflang, and one H1 per page.
+- Magic Balloon Childcare remains physically located in Framingham. Ashland is presented only through transparent `near Ashland` and `families from Ashland` language, with no Ashland address, location, office, branch, map, distance, or travel-time claim.
+- The Ashland page is differentiated from the Framingham and Natick pages through its own Ashland–Framingham routine context, a dedicated early-years care section, Ashland-specific FAQ, and a contextual link to the real Framingham location page. Route 9 is not used as this page's central context.
+- The page reuses optimized real project images, Jessica Ferreira's validated Google review with identified translations, and the shared Header, Footer, language selector, floating SMS, Cookie Consent, GA4, and analytics architecture.
+- Hero and final CTAs open the official SmartMate Family Request with `family_request_click` locations `ashland_hero` and `ashland_final_cta`; internal About, Child Care, Enrollment, Reviews, and Framingham links use the existing navigation tracking.
+- The sitemap includes all three Ashland URLs with `en`, `pt-BR`, `es`, and `x-default` alternates. No Schema, Search Console work, sitemap submission, indexing request, Marlborough page, or Holliston page was added.
+- Responsive and functional QA passed at 375px, 430px, 700px, 980px, and 1440px in EN/PT/ES with no horizontal overflow. One H1, five localized FAQ items, mobile menu, language continuity, Framingham disclosure, optimized images, localized legal links, Family Request, and internal navigation were verified without browser console errors.
+- P8 — ASHLAND LOCAL SEO PAGE — IMPLEMENTED — AWAITING USER APPROVAL.
 
 ## NEXT STEP
 
-`Evaluate Ashland vs. Marlborough Local SEO Page`
+`P9 — Evaluate Marlborough Local SEO Page`

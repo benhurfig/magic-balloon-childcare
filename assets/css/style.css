@@ -20,6 +20,7 @@
 @import url("./reviews-page.css");
 @import url("./local-framingham-page.css?v=20260828-1");
 @import url("./local-natick-page.css?v=20260828-1");
+@import url("./local-ashland-page.css?v=20260828-1");
 
 .floating-contact {
   position: fixed;
