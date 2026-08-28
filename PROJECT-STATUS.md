@@ -255,6 +255,18 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 
 `FINAL WEBSITE + LOCAL SEO AUDIT`
 
+## BRAND ASSET KIT — MAGIC BALLOON
+
+- Official source: `assets/images/logo/logo.png`; all new public asset filenames and visible brand text use `Magic Balloon` with two `o` letters.
+- Transparent logos: primary 1232×642, dark 1232×642, white 1232×642; uses: brand master and light/dark applications.
+- Transparent icons: icon 784×1007, icon-small 128×128, loader 512×512; uses: brand icon, small UI/badges, and future loader asset. The approved website Header and loader were not replaced.
+- Favicons: 512×512, 192×192, 64×64, and 32×32; favicon references and the web manifest now use the correctly named assets.
+- Profile assets: profile 1080×1080, Instagram 1080×1080, Facebook 1080×1080, Google 720×720; all preserve a safe circular crop.
+- Covers: Google 1024×576, Facebook 1640×624, story 1080×1920, email header 1200×300, and post landscape 1200×900.
+- Social sharing: Open Graph 1200×630, Twitter/X 1200×630, social square 1080×1080, and Instagram brand post 1080×1080.
+- Supporting assets: transparent watermark 1400×700 and brand pattern 1200×1200.
+- Home EN/PT/ES Open Graph and Twitter metadata now use the new `magic-balloon-*` filenames; no public code reference remains to the former `magic-ballon-og-image.png` or `magic-ballon-favicon.*` names.
+
 
 ## FINAL PRE-SEARCH-CONSOLE FIXES — IMPLEMENTED — AWAITING VALIDATION
 
