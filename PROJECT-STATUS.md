@@ -12,7 +12,7 @@ Magic Balloon Childcare
 
 ## CURRENT PHASE
 
-The Home, Legal Pages, GA4, P2 About, P3 Child Care, and P4 Enrollment are validated. P5 Reviews is implemented in all three languages and awaiting user approval.
+WEBSITE V1 — LAUNCHED / STABLE / READY FOR MONITORING
 
 ## ARCHITECTURE
 
@@ -293,6 +293,19 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - No website, Schema, GA4, Google Business Profile, Family Request, redirect, DNS, or Cloudflare configuration was changed during this Search Console step.
 - Pending: restore access to the existing `https://www.magicballoonchildcare.com/` URL-prefix property for `benhurfig@gmail.com` and allow Google time to crawl/process the submitted sitemap and queued URLs.
 - SEARCH CONSOLE — SITEMAP SUCCESS / 8 PRIORITY EN URLS QUEUED / INITIAL VALIDATION COMPLETE.
+
+## WEBSITE V1 — FINAL GIT CLEANUP
+
+- WEBSITE V1 — LAUNCHED / STABLE / READY FOR MONITORING.
+- Final asset cleanup completed: 14 unused legacy brand assets were intentionally removed, and the two legacy assets still referenced by the website were replaced with the approved Brand Asset Kit files.
+- Header, Footer, and small decorative balloon references now use `magic-balloon-icon-small.png`; the intro uses `magic-balloon-loader.png`; Home favicons use the new 64px and 192px files.
+- No public page depends on any removed `magic-ballon-*`, `magic-balloon-header-icon.png`, `magic-balloon-small.png`, or `logo/logol.png` file.
+- Search Console is configured, GA4 is validated, and Schema is validated.
+- Holliston remains intentionally public with `noindex,follow` and excluded from the sitemap.
+- Google Business Profile access remains pending with the client.
+- Git cleanup is complete and the repository is ready to remain clean after the final V1 commit.
+- Next website phase: `MONITORING / MAINTENANCE`.
+- Separate future initiative: `MATEGROWTH DAYCARE WEBSITE TEMPLATE V1 — PLANNING`.
 
 
 ## FINAL PRE-SEARCH-CONSOLE FIXES — IMPLEMENTED — AWAITING VALIDATION
