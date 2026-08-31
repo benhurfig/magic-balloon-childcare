@@ -307,6 +307,17 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Next website phase: `MONITORING / MAINTENANCE`.
 - Separate future initiative: `MATEGROWTH DAYCARE WEBSITE TEMPLATE V1 — PLANNING`.
 
+## BRAND ASSET KIT V2 — REBUILT FOR SAFE CROPPING
+
+- The complete 25-file Magic Balloon brand kit was rebuilt because the V1 square/profile composition could crop the top of the balloon and did not maintain a consistent safe area across formats.
+- Authoritative visual reference: `assets/images/logo/logo.png`, confirmed with the official `Magic Balloon Childcare` spelling and complete balloon, children, basket, clouds, stars, and wordmark.
+- All assets were reconstructed from one consistent extracted brand layer rather than from the defective profile image or separate logo interpretations.
+- Square profile artwork keeps the complete balloon illustration inside the circular-crop safe region; transparent icons, favicons, loader, logos, and watermark have measured alpha margins on every edge.
+- Google, Facebook, Open Graph, Twitter/X, social, story, landscape, and email compositions use format-specific contain layouts with the complete brand mark inside the central safe region.
+- A temporary 25-asset contact sheet and circular profile preview were created outside public assets for joint visual QA. Every asset was inspected for top, bottom, left, right, spelling, safe area, and intended crop behavior.
+- Current metadata already points to the validated `magic-balloon-og-image.png`, `magic-balloon-twitter-card.png`, logo, icon, loader, and favicon filenames; no metadata path change was required.
+- Website regression QA covers Home EN/PT/ES, About, Child Care, Enrollment, Reviews, and Framingham at 375px, 430px, and 1440px after replacing the shared public assets.
+
 
 ## FINAL PRE-SEARCH-CONSOLE FIXES — IMPLEMENTED — AWAITING VALIDATION
 
