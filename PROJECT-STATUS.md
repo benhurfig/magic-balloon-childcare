@@ -147,7 +147,7 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - All FAQ items begin closed, remain full-width and touch-friendly on mobile, and use a comfortable centered reading width on desktop.
 - The Family Request process and weekday visits after 5:00 PM are explained without adding a competing CTA.
 - No `FAQPage` or other FAQ structured data was added.
-- Official Family Request URL configured in `assets/js/config.js`: `https://www.smartimateapp.com/childcare-smartmate/?company=magic-balloon-childcare`.
+- Official Family Request URL configured in `assets/js/config.js`: `https://www.smartimateapp.com/family-request/?company=magic-balloon-childcare`.
 - Final Family Request CTA completed in English, Portuguese, and Spanish after the FAQ, making `#family-request` a real conversion destination for earlier page CTAs.
 - The Final CTA explains the process in three steps: child details, care needs, and requesting a family visit, without implying automatic enrollment or guaranteed availability.
 - The primary Family Request link opens SmartMate in a new tab and is tracked as `family_request_click` with `cta_location`, `page_language`, and `link_url` when Analytics consent has been granted.

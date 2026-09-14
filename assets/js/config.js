@@ -6,6 +6,6 @@ window.MAGIC_BALLOON_CONFIG = Object.freeze({
   sms: "sms:+17744279253",
   instagram: "https://www.instagram.com/magicballoonchildcare/",
   googleProfile: "https://share.google/24JgvSf33IDr733KY",
-  familyRequestUrl: "https://www.smartimateapp.com/childcare-smartmate/?company=magic-balloon-childcare",
+  familyRequestUrl: "https://www.smartimateapp.com/family-request/?company=magic-balloon-childcare",
   domain: "https://www.magicballoonchildcare.com"
 });
