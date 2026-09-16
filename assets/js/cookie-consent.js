@@ -30,7 +30,14 @@
     script.dataset.googleAnalytics = "";
     document.head.appendChild(script);
     window.gtag("js", new Date());
-    window.gtag("config", id, { transport_type: "beacon" });
+    window.gtag("config", id, {
+      transport_type: "beacon",
+      linker: {
+        domains: ["magicballoonchildcare.com", "smartimateapp.com"],
+        accept_incoming: true,
+        decorate_forms: true
+      }
+    });
   };
 
   const applyChoice = (accepted) => {
@@ -42,6 +49,9 @@
       ad_personalization: "denied"
     });
     if (accepted) loadAnalytics();
+    window.dispatchEvent(new CustomEvent("magicballoon:analytics-consent", {
+      detail: { accepted }
+    }));
   };
 
   document.addEventListener("DOMContentLoaded", () => {
