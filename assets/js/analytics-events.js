@@ -36,7 +36,7 @@
     decorateFamilyRequestLink(element);
     const eventName = {
       cta: "cta_click",
-      family_request: "family_request_click",
+      family_request: "final_cta_request",
       phone: "phone_click",
       text: "text_click",
       email: "email_click",
