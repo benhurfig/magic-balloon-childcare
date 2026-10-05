@@ -328,6 +328,14 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Current metadata already points to the validated `magic-balloon-og-image.png`, `magic-balloon-twitter-card.png`, logo, icon, loader, and favicon filenames; no metadata path change was required.
 - Website regression QA covers Home EN/PT/ES, About, Child Care, Enrollment, Reviews, and Framingham at 375px, 430px, and 1440px after replacing the shared public assets.
 
+## CONVERSION IMPROVEMENT — STEP 2 — FALL BULLETIN + CONFIRMED HOURS
+
+- Confirmed operating schedule: Monday–Friday, 7:30 AM–5:00 PM.
+- Confirmed family-visit schedule: weekdays, 5:00 PM–8:00 PM, scheduled approximately 2 days in advance.
+- Home EN/PT/ES now uses a compact Fall Bulletin with the automatic current month/year, care availability, ages 3 months–5 years, operating hours, and payment information.
+- The Fall treatment is limited to the Bulletin component with restrained warm colors and CSS leaf details; no photograph is used in the Bulletin.
+- Family Request is unchanged, analytics are unchanged, and the separate Video Tour initiative remains pending.
+
 
 ## FINAL PRE-SEARCH-CONSOLE FIXES — IMPLEMENTED — AWAITING VALIDATION
 
