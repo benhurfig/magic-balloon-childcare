@@ -14,6 +14,16 @@ Magic Balloon Childcare
 
 WEBSITE V1 — LAUNCHED / STABLE / READY FOR MONITORING
 
+## CONVERSION IMPROVEMENT STEP 1 — AGE CONSISTENCY + MOBILE HERO
+
+- The confirmed public age range is now 3 months–5 years, 3 meses a 5 anos, and 3 meses a 5 años.
+- The remaining outdated public age references were corrected in the English, Portuguese, and Spanish Home FAQs and the English Child Care heading.
+- The Home Hero was refined only below 700px: its vertical spacing, title scale, and image maximum width were reduced so the existing primary CTA appears earlier while preserving the H1 → image → supporting-content sequence.
+- Operating hours remain pending confirmation and were not invented.
+- Fall was not started.
+- Tour was not started.
+- The Final CTA was not changed.
+
 ## ARCHITECTURE
 
 Static website using semantic HTML, separate block-level CSS files imported by `style.css`, and small deferred JavaScript files. No framework, package manager, build step, dynamic translation, or CSS bundle is required.
@@ -195,7 +205,7 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Responsive and functional QA passed at 375px, 430px, 700px, 980px, and 1440px in EN/PT/ES with no horizontal overflow. Header, mobile menu, language continuity, localized legal links, Cookie Settings, and the optimized Hero image were verified. All three production routes return HTTP 200; GA4 Realtime confirmed the three localized About page views and `family_request_click` from the final CTA.
 - P2 — ABOUT PAGE — IMPLEMENTED — AWAITING USER APPROVAL.
 - P3 Child Care page implemented at `/en/child-care/`, `/pt/child-care/`, and `/es/child-care/` with localized title, meta description, canonical URLs, complete `en`, `pt-BR`, `es`, and `x-default` hreflang sets, and one H1 per page.
-- The page presents confirmed Full-Time Monday–Friday care for children from 3 months to 3 years, everyday learning, play, communication, movement, Portuguese and English exposure, private pay, Child Care Voucher acceptance, a concise service FAQ, and the Family Request next step without adding unconfirmed schedules, credentials, services, prices, or capacity.
+- The page presents confirmed Full-Time Monday–Friday care for children from 3 months to 5 years, everyday learning, play, communication, movement, Portuguese and English exposure, private pay, Child Care Voucher acceptance, a concise service FAQ, and the Family Request next step without adding unconfirmed schedules, credentials, services, prices, or capacity.
 - The compact Child Care Hero uses the existing optimized `assets/images/our-space/activity.webp` asset above the fold. The real-space section reuses `space-main.webp`, `activity.webp`, and `daily-life.webp` with intrinsic dimensions and lazy loading below the fold.
 - Mobile semantic order is eyebrow, H1, service introduction, trust line, and Hero image. Responsive QA passed at 375px, 430px, 700px, 980px, and 1440px in EN/PT/ES with no horizontal overflow.
 - Child Care reuses the shared Header, mobile navigation, language selector, Footer, floating SMS, Cookie Consent, GA4 configuration, and analytics architecture. The language selector remains on the equivalent localized Child Care route, and the active navigation item uses `aria-current="page"`.

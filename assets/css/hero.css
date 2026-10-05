@@ -193,6 +193,32 @@
   transform: scale(0.78);
 }
 
+@media (max-width: 699px) {
+  .hero {
+    min-height: auto;
+    padding-block: 2rem 2.5rem;
+  }
+
+  .hero__title {
+    margin-bottom: 0.75rem;
+    font-size: clamp(2.25rem, 10vw, 2.9rem);
+  }
+
+  .hero__visual {
+    width: min(62%, 22rem);
+    margin-bottom: 1rem;
+    padding: 0.55rem;
+  }
+
+  .hero__description {
+    margin-bottom: 0.9rem;
+  }
+
+  .hero__trust {
+    margin-bottom: 1rem;
+  }
+}
+
 @media (min-width: 700px) {
   .hero__actions {
     display: flex;
