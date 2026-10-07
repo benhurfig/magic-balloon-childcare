@@ -153,6 +153,46 @@
   font-weight: 700;
 }
 
+/* Compact Home teaser; the full tour lives on the dedicated Our Space page. */
+.our-space--teaser {
+  padding-block: clamp(3.5rem, 7vw, 6rem);
+}
+
+.our-space__teaser-grid {
+  display: grid;
+  gap: 1.75rem;
+  align-items: center;
+}
+
+.our-space__teaser-copy {
+  max-width: 37rem;
+}
+
+.our-space--teaser .section-eyebrow {
+  justify-content: flex-start;
+}
+
+.our-space--teaser .our-space__title {
+  margin: .55rem 0 1rem;
+  font-size: clamp(2.15rem, 6vw, 4.1rem);
+  text-align: left;
+}
+
+.our-space--teaser .our-space__description {
+  max-width: 36rem;
+  margin: 0 0 1.35rem;
+  text-align: left;
+}
+
+.our-space__teaser-image {
+  display: block;
+  width: min(100%, 30rem);
+  margin-inline: auto;
+  border: .4rem solid #fff;
+  border-radius: 1.5rem 3.4rem 1.5rem 3.4rem;
+  box-shadow: var(--shadow-large);
+}
+
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
   .space-photo:hover .space-photo__image {
     transform: scale(1.025);
@@ -160,6 +200,15 @@
 }
 
 @media (min-width: 700px) {
+  .our-space__teaser-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(18rem, .78fr);
+    gap: clamp(2rem, 7vw, 5rem);
+  }
+
+  .our-space__teaser-image {
+    margin: 0 0 0 auto;
+  }
+
   .our-space__gallery {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     align-items: stretch;

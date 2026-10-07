@@ -14,6 +14,15 @@ Magic Balloon Childcare
 
 WEBSITE V1 — LAUNCHED / STABLE / READY FOR MONITORING
 
+## OUR SPACE DEDICATED PAGE — IMPLEMENTED
+
+- Added localized routes: `/en/our-space/`, `/pt/nosso-espaco/`, and `/es/nuestro-espaco/`.
+- Moved the real video tour from the Home page to the dedicated Our Space pages; Home now uses a compact, image-based teaser.
+- Updated public navigation links to the localized Our Space routes and added the three pages to the sitemap with reciprocal hreflang metadata.
+- Added localized metadata, canonical URLs, WebPage/Breadcrumb schema, responsive tour/gallery presentation, and compact availability CTAs.
+- QA includes responsive layout checks, no Home MP4 reference, and retained native video controls with metadata-only preload.
+- Next step: FINAL CTA CONVERSION SIMPLIFICATION.
+
 ## CONVERSION IMPROVEMENT STEP 1 — AGE CONSISTENCY + MOBILE HERO
 
 - The confirmed public age range is now 3 months–5 years, 3 meses a 5 anos, and 3 meses a 5 años.
