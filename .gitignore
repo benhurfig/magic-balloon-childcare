@@ -1,3 +1,5 @@
 .DS_Store
 .vscode/
 *.log
+# Keep the client-provided source video locally; Cloudflare Pages only receives the optimized web derivative.
+assets/videos/our-space/magic-balloon-tour.mp4
