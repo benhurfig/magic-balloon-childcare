@@ -43,17 +43,38 @@
 
 .our-space__description {
   max-width: 45rem;
-  margin: 0 auto;
+  margin: 1.4rem auto 0;
   color: var(--color-text-secondary);
   font-size: clamp(1rem, 3.8vw, 1.1rem);
   line-height: 1.8;
+}
+
+.our-space__tour {
+  max-width: 26rem;
+  margin: 2rem auto 0;
+}
+
+.our-space__tour-frame {
+  overflow: hidden;
+  border: 0.4rem solid #fff;
+  border-radius: clamp(1.5rem, 5vw, 2.25rem);
+  background: var(--color-navy);
+  box-shadow: var(--shadow-large);
+}
+
+.our-space__video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  background: var(--color-navy);
 }
 
 .our-space__gallery {
   display: grid;
   gap: 1.25rem;
   max-width: 70rem;
-  margin: 2.75rem auto 0;
+  margin: 2rem auto 0;
 }
 
 .space-photo {
@@ -68,12 +89,12 @@
 
 .space-photo__image-wrap {
   overflow: hidden;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   background: var(--color-light-blue);
 }
 
 .space-photo--main .space-photo__image-wrap {
-  aspect-ratio: 5 / 4;
+  aspect-ratio: 1 / 1;
 }
 
 .space-photo__image {
@@ -121,6 +142,17 @@
   line-height: 1.65;
 }
 
+.our-space__action {
+  margin: 2.25rem auto 0;
+  text-align: center;
+}
+
+.our-space__action p {
+  margin-bottom: 0.85rem;
+  color: var(--color-navy);
+  font-weight: 700;
+}
+
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
   .space-photo:hover .space-photo__image {
     transform: scale(1.025);
@@ -129,35 +161,15 @@
 
 @media (min-width: 700px) {
   .our-space__gallery {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     align-items: stretch;
     gap: 1.5rem;
-    margin-top: 3.25rem;
-  }
-
-  .space-photo--main {
-    grid-row: 1 / span 2;
-  }
-
-  .space-photo--main .space-photo__image-wrap {
-    height: calc(100% - 5.6rem);
-    min-height: 34rem;
-    aspect-ratio: auto;
-  }
-
-  .space-photo:not(.space-photo--main) {
-    display: grid;
-    grid-template-rows: minmax(13rem, 1fr) auto;
-  }
-
-  .space-photo:not(.space-photo--main) .space-photo__image-wrap {
-    aspect-ratio: auto;
   }
 }
 
 @media (min-width: 980px) {
   .our-space__gallery {
-    grid-template-columns: minmax(0, 1.35fr) minmax(20rem, 0.85fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.75rem;
   }
 

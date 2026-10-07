@@ -361,3 +361,10 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - Validation covered the affected Home and About markup, localized wording, JSON-LD preservation, and diff formatting. Responsive visual validation remains limited to the locally available browser viewport.
 - NEXT: Our Space — real video tour + selected real photos.
 - AFTER THAT: simplify Final CTA.
+
+## OUR SPACE — REAL VIDEO TOUR
+
+- Home `#our-space` was updated in EN/PT/ES with the client-provided real vertical tour video, native HTML5 controls, `playsinline`, and `preload="metadata"`; autoplay and looping are intentionally not used.
+- The original uploaded video remains preserved at `assets/videos/our-space/magic-balloon-tour.mp4`. The website serves the optimized H.264/AAC derivative `magic-balloon-tour-web.mp4` (540×960) with a real frame from that tour as its poster.
+- The section now follows the intended order: localized eyebrow and heading, video, short localized description, three real existing space photos, then the localized internal availability CTA. The CTA retains the existing `data-track="cta"` architecture and points to `#family-request`.
+- Hero, Fall Bulletin, provider-experience content, Family Request, final CTA, analytics, SEO, and all other sections remain unchanged.
