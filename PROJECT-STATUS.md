@@ -14,6 +14,13 @@ Magic Balloon Childcare
 
 WEBSITE V1 — LAUNCHED / STABLE / READY FOR MONITORING
 
+## GLOBAL FINAL CTA + FOOTER V2 — IMPLEMENTED
+
+- Standardized the final conversion section across the commercial EN, PT, and ES pages with Family Request, call, text, and email paths.
+- Preserved direct SmartMate Family Request routing and the existing analytics event names; each action identifies its global final CTA location.
+- Replaced the commercial-page footer presentation with one light, localized footer containing brand, navigation, contact, languages, and legal links.
+- Enrollment, legal routes, and the noindex Holliston page do not receive the global final CTA.
+
 ## OUR SPACE DEDICATED PAGE — IMPLEMENTED
 
 - Added localized routes: `/en/our-space/`, `/pt/nosso-espaco/`, and `/es/nuestro-espaco/`.

@@ -217,7 +217,8 @@
 
 .hero__badge--google {
   bottom: .55rem;
-  left: -.4rem;
+  right: -.4rem;
+  left: auto;
   gap: .4rem;
   border-right: 0.2rem solid rgb(255 200 69 / 90%);
 }
@@ -311,7 +312,8 @@
 
   .hero__badge--google {
     bottom: .15rem;
-    left: -.75rem;
+    right: -.75rem;
+    left: auto;
   }
 
   .hero__badge--google span {
