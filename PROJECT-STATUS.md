@@ -351,3 +351,13 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - The original 512px balloon favicon remains preserved; a 256px optimized `magic-balloon-small.png` derivative is used for intro and small decorative placements.
 - The approved Open Graph artwork now visibly spells `Magic Balloon Childcare` and is integrated with the corrected `magic-balloon-*` metadata filenames.
 - Search Console, sitemap submission, and indexing requests remain pending and were not started.
+
+## PROVIDER EXPERIENCE — 15 YEARS
+
+- Client-confirmed on 2026-10-06: Lucineia Fernandes has 15 years of experience in early childhood education.
+- No outdated public references to 10 years, 10+ years, or equivalent wording were found in the EN/PT/ES website content, metadata, Open Graph/Twitter descriptions, or existing JSON-LD.
+- The Home About introduction and the About-page education/background section were updated in EN/PT/ES with one clear, provider-specific mention of the confirmed 15 years.
+- No image or brand artwork with an outdated experience claim was found or edited.
+- Validation covered the affected Home and About markup, localized wording, JSON-LD preservation, and diff formatting. Responsive visual validation remains limited to the locally available browser viewport.
+- NEXT: Our Space — real video tour + selected real photos.
+- AFTER THAT: simplify Final CTA.
