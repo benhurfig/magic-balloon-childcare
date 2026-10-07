@@ -11,6 +11,7 @@
 .global-contact-card { display: grid; gap: .75rem; min-width: 0; padding: 1rem; border: 1px solid rgb(255 255 255 / 17%); border-radius: 1rem; color: #fff; background: rgb(255 255 255 / 8%); font-family: var(--font-body); text-decoration: none; transition: background var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast); }
 .global-contact-card:hover { border-color: rgb(255 255 255 / 45%); background: rgb(255 255 255 / 13%); box-shadow: 0 .75rem 1.75rem rgb(0 0 0 / 15%); transform: translateY(-.15rem); }
 .global-contact-card--primary { border-color: transparent; color: var(--color-navy); background: #fff; box-shadow: 0 1rem 2.6rem rgb(0 0 0 / 18%); }
+.global-contact-card--primary:hover { border-color: transparent; background: #fff; }
 .global-contact-card__label { display: block; font-size: .74rem; font-weight: 700; letter-spacing: .06em; }
 .global-contact-card__title { display: block; margin-top: .15rem; font-family: var(--font-body); font-size: 1.2rem; font-weight: 700; letter-spacing: -.02em; line-height: 1.2; }
 .global-contact-card__detail { display: block; margin-top: .35rem; color: inherit; font-size: .93rem; font-weight: 400; line-height: 1.5; opacity: .83; overflow-wrap: anywhere; }
