@@ -181,6 +181,12 @@
   object-fit: cover;
 }
 
+.hero__image-frame picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .hero__badge {
   position: absolute;
   z-index: 3;

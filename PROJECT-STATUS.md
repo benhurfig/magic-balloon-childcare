@@ -378,6 +378,17 @@ Static website using semantic HTML, separate block-level CSS files imported by `
 - NEXT: Our Space — real video tour + selected real photos.
 - AFTER THAT: simplify Final CTA.
 
+## TECHNICAL FIX STEP 1 — MOBILE LCP + LEGAL LINKS
+
+- The prior PageSpeed mobile baseline was Performance 76, LCP 6.1 s, FCP 1.5 s, and CLS 0; desktop Performance was 98 with LCP 0.7 s.
+- The audit identified the mobile H1 as the LCP element in the 6.1 s run. The 1.55-second intro overlay delayed above-the-fold visibility, while a second report identified the Hero image as LCP and estimated up to 1.2 s of image-delivery savings.
+- Home EN/PT/ES no longer renders the timed intro overlay or loads its JavaScript/CSS. The approved Hero, mobile order, badges, image crop, content, Final CTA, Footer, Fall Bulletin, and navigation remain unchanged.
+- The same Hero photograph now uses responsive WebP sources: `hero-480.webp` (40,292 bytes) for mobile and `hero-768.webp` (91,766 bytes) for larger displays, with the original 232,076-byte JPEG preserved as fallback. `fetchpriority="high"`, eager loading, dimensions, alt text, and aspect ratio are preserved.
+- Privacy Policy EN/PT/ES now describes the current automatic GA4 loading behavior and the current denial of advertising storage/personalization, without changing Analytics code, the Measurement ID, events, cookies, or Family Request.
+- The English language links on PT/ES Privacy and Terms now use the canonical `/privacy/` and `/terms/` routes rather than the obsolete `/en/` variants.
+- Local QA covered Home, About, Our Space, Privacy, and Terms in EN/PT/ES at 375, 390, 430, 700, 980, and 1440 px (90 combinations), with no horizontal overflow, local HTTP failures, or new JavaScript errors. Mobile menu open/close/Escape, Hero responsive source selection, video controls/source/poster, canonical legal language links, and 1,461 local HTML references were validated.
+- Production PageSpeed and deployment validation remain to be recorded after the Cloudflare build from this commit.
+
 ## OUR SPACE — REAL VIDEO TOUR
 
 - Home `#our-space` was updated in EN/PT/ES with the client-provided real vertical tour video, native HTML5 controls, `playsinline`, and `preload="metadata"`; autoplay and looping are intentionally not used.
