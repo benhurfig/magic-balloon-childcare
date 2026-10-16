@@ -10,9 +10,20 @@
         "analytics_consent",
         window.analyticsConsentGranted ? "granted" : "denied"
       );
-      ["utm_source", "utm_medium", "utm_campaign"].forEach((parameter) => {
+      [
+        "utm_source",
+        "utm_medium",
+        "utm_campaign",
+        "utm_content",
+        "utm_term",
+        "utm_id",
+        "fbclid",
+        "gclid"
+      ].forEach((parameter) => {
         const value = new URL(window.location.href).searchParams.get(parameter);
-        if (value) destination.searchParams.set(parameter, value);
+        if (value && !destination.searchParams.has(parameter)) {
+          destination.searchParams.set(parameter, value);
+        }
       });
       element.href = destination.toString();
     } catch (error) {

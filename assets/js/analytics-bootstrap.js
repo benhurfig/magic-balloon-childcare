@@ -1,6 +1,16 @@
 "use strict";
 
 (() => {
+  const isLocalEnvironment =
+    window.location.protocol === "file:" ||
+    window.location.hostname === "localhost" ||
+    window.location.hostname === "127.0.0.1";
+
+  if (isLocalEnvironment) {
+    window.analyticsConsentGranted = false;
+    return;
+  }
+
   const config = window.MAGIC_BALLOON_CONFIG || {};
   const id = config.ga4MeasurementId;
   if (!/^G-[A-Z0-9]+$/.test(id || "") || document.querySelector("[data-google-analytics]")) return;

@@ -771,6 +771,40 @@ body.landing-page {
   gap: .65rem 1rem;
 }
 
+.lp-mobile-bar {
+  display: none;
+}
+
+@media (max-width: 699px) {
+  .lp-mobile-bar:not([hidden]) {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, .65fr);
+    gap: .5rem;
+    padding: .65rem .75rem max(.65rem, env(safe-area-inset-bottom));
+    border-top: 1px solid rgb(31 42 68 / 10%);
+    background: rgb(255 255 255 / 96%);
+    box-shadow: 0 -.65rem 1.8rem rgb(31 42 68 / 10%);
+    backdrop-filter: blur(.75rem);
+  }
+
+  .lp-mobile-bar .lp-button {
+    min-width: 0;
+    min-height: 3rem;
+    padding: .7rem .75rem;
+    font-size: .76rem;
+    line-height: 1.2;
+  }
+
+  .lp-mobile-bar .lp-button--secondary {
+    border-color: rgb(31 42 68 / 16%);
+  }
+}
+
 @media (min-width: 430px) {
   .lp-actions {
     grid-template-columns: 1.2fr .8fr;
