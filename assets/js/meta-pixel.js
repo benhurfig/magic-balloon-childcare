@@ -59,11 +59,14 @@
       Boolean(element.closest(".global-final-cta, .lp-request-card, [data-final-cta]"));
     const parameters = { cta_location: location, page_language: language };
 
-    if (action === "phone" || action === "text" || action === "email") {
-      window.fbq("track", "Contact", {
-        ...parameters,
-        contact_method: action
-      });
+    const contactEvent = {
+      phone: "PhoneClick",
+      text: "TextClick",
+      email: "EmailClick"
+    }[action];
+
+    if (contactEvent) {
+      window.fbq("trackCustom", contactEvent, parameters);
     } else if (action === "family_request") {
       window.fbq("trackCustom", "FamilyRequestClick", parameters);
     }
