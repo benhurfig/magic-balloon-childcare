@@ -14,10 +14,39 @@
     pageViewSent: false
   };
   window.__magicBalloonMetaPixelV1 = state;
+  const isGpcEnabled = () => navigator.globalPrivacyControl === true;
+  const readConsent = () => {
+    try {
+      return window.localStorage.getItem(CONSENT_KEY);
+    } catch (_) {
+      return null;
+    }
+  };
 
   const hasAdvertisingConsent = () =>
     window.magicBalloonAdvertisingConsentGranted === true &&
-    navigator.globalPrivacyControl !== true;
+    !isGpcEnabled();
+
+  const updateChoiceControls = () => {
+    const status = document.querySelector("[data-advertising-consent-status]");
+    const allow = document.querySelector('[data-advertising-consent="granted"]');
+    const decline = document.querySelector('[data-advertising-consent="denied"]');
+    const preference = readConsent();
+
+    if (allow) allow.setAttribute("aria-pressed", String(preference === "granted"));
+    if (decline) decline.setAttribute("aria-pressed", String(preference === "denied"));
+    if (!status) return;
+
+    if (isGpcEnabled()) {
+      status.textContent = status.dataset.gpcMessage;
+    } else if (preference === "granted") {
+      status.textContent = status.dataset.grantedMessage;
+    } else if (preference === "denied") {
+      status.textContent = status.dataset.deniedMessage;
+    } else {
+      status.textContent = status.dataset.unknownMessage;
+    }
+  };
 
   const initialize = () => {
     if (isLocalEnvironment || !hasAdvertisingConsent() || state.initialized) return;
@@ -44,6 +73,7 @@
     }
 
     state.initialized = true;
+    window.fbq("consent", "grant");
     window.fbq("init", PIXEL_ID);
     if (!state.pageViewSent) {
       state.pageViewSent = true;
@@ -51,26 +81,41 @@
     }
   };
 
-  // A consent manager may grant consent by dispatching this event after an
-  // explicit choice. This script does not display an on-page prompt.
-  window.addEventListener(CONSENT_EVENT, (event) => {
-    window.magicBalloonAdvertisingConsentGranted = event.detail?.granted === true;
-    if (window.magicBalloonAdvertisingConsentGranted) initialize();
+  const applyConsent = (granted, persist) => {
+    const allowed = granted === true && !isGpcEnabled();
+    window.magicBalloonAdvertisingConsentGranted = allowed;
+
+    if (persist) {
+      try {
+        window.localStorage.setItem(CONSENT_KEY, granted === true ? "granted" : "denied");
+      } catch (_) {
+        // This explicit choice applies for the current page if storage is unavailable.
+      }
+    }
+
+    if (window.fbq) {
+      window.fbq("consent", allowed ? "grant" : "revoke");
+    }
+    if (allowed) initialize();
+    updateChoiceControls();
+  };
+
+  document.querySelectorAll("[data-advertising-consent]").forEach((button) => {
+    button.addEventListener("click", () => {
+      applyConsent(button.dataset.advertisingConsent === "granted", true);
+    });
   });
 
-  let savedConsent = null;
-  try {
-    savedConsent = window.localStorage.getItem(CONSENT_KEY);
-  } catch (_) {
-    // Ask on this visit when browser storage is unavailable.
-  }
+  // Keep other open tabs in sync when a visitor changes their choice.
+  window.addEventListener("storage", (event) => {
+    if (event.key !== CONSENT_KEY) return;
+    applyConsent(event.newValue === "granted", false);
+  });
 
-  if (navigator.globalPrivacyControl === true || savedConsent === "denied") {
-    window.magicBalloonAdvertisingConsentGranted = false;
-  } else if (savedConsent === "granted") {
-    window.magicBalloonAdvertisingConsentGranted = true;
-    initialize();
-  } else {
-    window.magicBalloonAdvertisingConsentGranted = false;
-  }
+  // External consent managers can update the preference through this event.
+  window.addEventListener(CONSENT_EVENT, (event) => {
+    applyConsent(event.detail?.granted === true, true);
+  });
+
+  applyConsent(readConsent() === "granted", false);
 })();
