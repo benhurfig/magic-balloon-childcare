@@ -16,7 +16,7 @@ WEBSITE V1 — LAUNCHED / STABLE / READY FOR MONITORING
 
 ## META ADS LANDING V1 — FINAL QA PREPARATION
 
-- Dedicated English campaign landing remains at `/en/landing/` with the approved visual design and direct SmartMate Family Request handoff.
+- The official English campaign landing is `/landing/`; `/en/landing/` permanently redirects to it. The approved visual design and direct SmartMate Family Request handoff remain on the root landing implementation.
 - Added a mobile-only sticky action bar that appears after the Hero and remains hidden once the Final CTA is reached. It reuses the existing Family Request and SMS tracking conventions.
 - Connected the existing same-photo 480px, 800px, and 1100px WebP variants to the Hero through `srcset` and `sizes`; the original 1200px image remains the fallback and LCP image.
 - Preserved the local GA4 protection and expanded campaign-parameter forwarding in `analytics-bootstrap.js` and `analytics-events.js`.
