@@ -1,7 +1,7 @@
 "use strict";
 
 (() => {
-  const PIXEL_ID = "1768490507729160";
+  const PIXEL_ID = "1097940096170680";
   const CONSENT_EVENT = "magicballoon:advertising-consent";
   const CONSENT_KEY = "magicBalloonAdvertisingConsent";
   const isLocalEnvironment =
