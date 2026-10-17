@@ -11,7 +11,8 @@
 
   const state = window.__magicBalloonMetaPixelV1 || {
     initialized: false,
-    pageViewSent: false
+    pageViewSent: false,
+    finalCTAViewSent: false
   };
   window.__magicBalloonMetaPixelV1 = state;
   const isGpcEnabled = () => navigator.globalPrivacyControl === true;
@@ -48,6 +49,57 @@
     }
   };
 
+  const sendMetaClickEvent = (element) => {
+    if (!hasAdvertisingConsent() || !state.initialized || typeof window.fbq !== "function") return;
+
+    const action = element.dataset.track;
+    const location = element.dataset.location || "unspecified";
+    const language = document.documentElement.lang || "unspecified";
+    const isFinalCTA = /(?:^|_)final(?:_|$)|final_cta/i.test(location) ||
+      Boolean(element.closest(".global-final-cta, .lp-request-card, [data-final-cta]"));
+    const parameters = { cta_location: location, page_language: language };
+
+    if (action === "phone" || action === "text" || action === "email") {
+      window.fbq("track", "Contact", {
+        ...parameters,
+        contact_method: action
+      });
+    } else if (action === "family_request") {
+      window.fbq("trackCustom", "FamilyRequestClick", parameters);
+    }
+
+    if (isFinalCTA) {
+      window.fbq("trackCustom", "FinalCTAClick", {
+        ...parameters,
+        cta_action: action || "other"
+      });
+    }
+  };
+
+  const observeFinalCTA = () => {
+    if (!hasAdvertisingConsent() || !state.initialized || state.finalCTAViewSent) return;
+    const targets = document.querySelectorAll(".global-final-cta, .lp-request-card, [data-final-cta]");
+    if (!targets.length || typeof window.IntersectionObserver !== "function") return;
+
+    const observer = new IntersectionObserver((entries) => {
+      if (!hasAdvertisingConsent() || state.finalCTAViewSent) {
+        observer.disconnect();
+        return;
+      }
+      const visible = entries.find((entry) => entry.isIntersecting);
+      if (!visible) return;
+
+      state.finalCTAViewSent = true;
+      window.fbq("trackCustom", "FinalCTAView", {
+        cta_location: visible.target.dataset.location || visible.target.id || "final_cta",
+        page_language: document.documentElement.lang || "unspecified"
+      });
+      observer.disconnect();
+    }, { threshold: 0.1 });
+
+    targets.forEach((target) => observer.observe(target));
+  };
+
   const initialize = () => {
     if (isLocalEnvironment || !hasAdvertisingConsent() || state.initialized) return;
 
@@ -79,6 +131,7 @@
       state.pageViewSent = true;
       window.fbq("track", "PageView");
     }
+    observeFinalCTA();
   };
 
   const applyConsent = (granted, persist) => {
@@ -99,6 +152,11 @@
     if (allowed) initialize();
     updateChoiceControls();
   };
+
+  document.addEventListener("click", (event) => {
+    const element = event.target.closest("[data-track]");
+    if (element) sendMetaClickEvent(element);
+  });
 
   document.querySelectorAll("[data-advertising-consent]").forEach((button) => {
     button.addEventListener("click", () => {
