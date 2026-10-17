@@ -1,0 +1,8 @@
+/en/
+  Cache-Control: no-cache
+
+/en/landing/
+  Cache-Control: no-cache
+
+/assets/js/meta-pixel.js
+  Cache-Control: public, max-age=0, must-revalidate
