@@ -21,7 +21,7 @@ WEBSITE V1 — LAUNCHED / STABLE / READY FOR MONITORING
 - Connected the existing same-photo 480px, 800px, and 1100px WebP variants to the Hero through `srcset` and `sizes`; the original 1200px image remains the fallback and LCP image.
 - Preserved the local GA4 protection and expanded campaign-parameter forwarding in `analytics-bootstrap.js` and `analytics-events.js`.
 - Mobile and desktop QA, video playback checks, CTA/link checks, asset validation, and console checks are recorded in the current task handoff.
-- Meta Pixel remains pending and was not installed. SmartMate end-to-end attribution remains pending an authorized real-request test.
+- Meta Pixel consent flow is implemented in the local source for Home and the English campaign landing; live Events Manager verification remains pending publication and visitor consent. SmartMate end-to-end attribution remains pending an authorized real-request test.
 - Commit, push, and production publication remain pending approval.
 
 ## GLOBAL FINAL CTA + FOOTER V2 — IMPLEMENTED
