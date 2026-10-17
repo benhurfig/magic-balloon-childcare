@@ -168,7 +168,9 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}
 .lp-contact-intro{font-size:15px;line-height:1.8;color:#d2d8e6;margin-top:20px!important;margin-bottom:25px!important;max-width:520px}
 .lp-request-card{background:#fff;color:var(--lp-navy);border-radius:18px;padding:21px 22px;display:grid;grid-template-columns:37px 1fr;gap:4px 13px;align-items:center}
 .lp-request-icon{width:37px;height:42px;background:var(--lp-blush);color:#af335b;border-radius:10px;display:grid;place-items:center}
+.lp-request-label{display:block;margin-bottom:5px;color:var(--lp-teal);font-size:9px;font-weight:800;letter-spacing:.09em;line-height:1.4}
 .lp-request-card h3{font-size:17px;letter-spacing:-.035em;line-height:1.4}
+.lp-direct-heading{margin:20px 0 10px;font-size:14px;line-height:1.5;letter-spacing:-.02em}
 .lp-request-card p{font-size:12px;line-height:1.65;color:var(--lp-text);margin-top:3px;max-width:330px}
 .lp-request-card .lp-button{grid-column:1/-1;margin-top:14px;min-height:50px;justify-content:space-between;padding-inline:19px;font-size:14px}
 .lp-direct-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}

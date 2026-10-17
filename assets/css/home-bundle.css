@@ -1231,8 +1231,9 @@ main {
 .global-final-cta__intro { max-width: 42rem; }
 .global-final-cta .section-eyebrow { margin-bottom: .7rem; color: var(--color-light-blue); }
 .global-final-cta h2 { margin: 0; color: #fff; font-size: clamp(2.2rem, 5.5vw, 4rem); letter-spacing: -.045em; line-height: 1.05; }
-.global-final-cta__intro > p:last-child { margin: 1rem 0 1.5rem; color: rgb(255 255 255 / 82%); font-size: 1.05rem; line-height: 1.7; }
+.global-final-cta__intro > p:not(.section-eyebrow) { margin: 1rem 0 1.5rem; color: rgb(255 255 255 / 82%); font-size: 1.05rem; line-height: 1.7; }
 .global-final-cta__actions { display: grid; gap: .75rem; }
+.global-final-cta__contact-heading { grid-column: 1 / -1; margin: .35rem 0 -.1rem; color: #fff; font-family: var(--font-body); font-size: 1rem; font-weight: 600; }
 .global-contact-card { display: grid; gap: .75rem; min-width: 0; padding: 1rem; border: 1px solid rgb(255 255 255 / 17%); border-radius: 1rem; color: #fff; background: rgb(255 255 255 / 8%); font-family: var(--font-body); text-decoration: none; transition: background var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast); }
 .global-contact-card:hover { border-color: rgb(255 255 255 / 45%); background: rgb(255 255 255 / 13%); box-shadow: 0 .75rem 1.75rem rgb(0 0 0 / 15%); transform: translateY(-.15rem); }
 .global-contact-card--primary { border-color: transparent; color: var(--color-navy); background: #fff; box-shadow: 0 1rem 2.6rem rgb(0 0 0 / 18%); }
