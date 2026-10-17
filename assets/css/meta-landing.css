@@ -77,8 +77,11 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}
 .lp-license-badge strong{font-size:12px}
 .lp-hero-spark{position:absolute;top:20%;left:-34px;color:#c79127;transform:rotate(9deg)}
 .lp-hero-spark .lp-icon{width:34px;height:34px;fill:#ffebbf;stroke-width:1.3}
-.lp-hero-bottom{border-top:1px solid #e5e8e2;display:flex;justify-content:center;gap:56px;padding:22px 0 23px;color:#56605c;font-size:12px;line-height:1.4}
+.lp-hero-bottom{border-top:1px solid #e5e8e2;display:flex;justify-content:center;gap:34px;padding:22px 0 23px;color:#56605c;font-size:12px;line-height:1.4}
 .lp-hero-bottom>span{display:flex;align-items:center;gap:8px}
+.lp-hero-rating{display:flex;align-items:center;gap:7px;color:inherit;text-decoration:none;white-space:nowrap}
+.lp-hero-rating:hover{text-decoration:underline;text-underline-offset:3px}
+.lp-hero-rating .lp-stars{font-size:14px;letter-spacing:1px;color:#9e7416}
 .lp-hero-bottom .lp-icon{color:var(--lp-teal);width:19px;height:19px}
 /* The tour and real room details. */
 .lp-space-section{background:#fff}
@@ -216,7 +219,7 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}
  .lp-hero-photo figcaption{left:14px;right:14px;bottom:14px;padding:13px;font-size:14px;gap:9px}
  .lp-hero-photo figcaption small{font-size:9px}
  .lp-photo-heart{width:31px;height:31px}.lp-photo-heart .lp-icon{width:19px;height:19px}
- .lp-hero-bottom{gap:26px;font-size:10px}
+ .lp-hero-bottom{gap:16px;font-size:10px}
  .lp-section{padding-block:68px}
  .lp-space-grid{gap:24px 48px;grid-template-columns:.85fr 1.15fr}
  .lp-provider-grid{gap:20px 42px}
@@ -284,8 +287,9 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}
  .lp-hero-actions .lp-button{min-height:51px;width:100%;font-size:14px;justify-content:center;border-radius:13px}
  .lp-hero-actions .lp-text-action{justify-content:center;font-size:12px;min-height:35px}
  .lp-micro{font-size:10px;margin-top:5px!important;text-align:center}
- .lp-hero-bottom{padding-block:18px;gap:11px;display:grid;grid-template-columns:1fr 1fr 1fr;align-items:start}
- .lp-hero-bottom>span{display:flex;flex-direction:column;gap:7px;text-align:center;font-size:9px;line-height:1.5}
+ .lp-hero-bottom{padding-block:18px;gap:16px 11px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+ .lp-hero-bottom>span,.lp-hero-bottom>.lp-hero-rating{display:flex;flex-direction:column;gap:7px;text-align:center;font-size:9px;line-height:1.5}
+ .lp-hero-rating .lp-stars{font-size:15px}
  .lp-hero-bottom .lp-icon{width:19px;height:19px}
  .lp-space-grid{grid-template-columns:1fr;grid-template-areas:"heading" "tour" "details";gap:29px}
  .lp-space-heading{padding:0}
