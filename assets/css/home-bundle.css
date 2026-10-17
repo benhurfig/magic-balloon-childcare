@@ -420,6 +420,7 @@ main {
   padding-top: var(--header-height);
 }
 
+.global-contact-card__urgency { grid-column: 1 / -1; display: block; color: inherit; font-family: var(--font-body); font-size: .82rem; font-weight: 600; line-height: 1.5; opacity: .86; }
 @media (min-width: 700px) {
   .site-header__inner {
     gap: 1rem;

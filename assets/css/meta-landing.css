@@ -172,6 +172,7 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}
 .lp-request-card h3{font-size:17px;letter-spacing:-.035em;line-height:1.4}
 .lp-direct-heading{margin:20px 0 10px;font-size:14px;line-height:1.5;letter-spacing:-.02em}
 .lp-request-card p{font-size:12px;line-height:1.65;color:var(--lp-text);margin-top:3px;max-width:330px}
+.lp-request-urgency{grid-column:1/-1;margin:2px 0 0!important;max-width:none!important;color:var(--lp-text);font-size:11px!important;line-height:1.6!important;font-weight:600}
 .lp-request-card .lp-button{grid-column:1/-1;margin-top:14px;min-height:50px;justify-content:space-between;padding-inline:19px;font-size:14px}
 .lp-direct-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
 .lp-contact-card{display:flex;gap:11px;align-items:center;background:#ffffff08;border:1px solid #ffffff24;border-radius:15px;padding:18px 15px;min-width:0;transition:background-color 150ms ease,border-color 150ms ease}
