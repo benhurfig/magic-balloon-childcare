@@ -49,8 +49,8 @@
     }
   };
 
-  const sendMetaClickEvent = (element) => {
-    if (!hasAdvertisingConsent() || !state.initialized || typeof window.fbq !== "function") return;
+  const sendMetaClickEvent = (element, eventOptions) => {
+    if (!hasAdvertisingConsent() || !state.initialized || typeof window.fbq !== "function") return false;
 
     const action = element.dataset.track;
     const location = element.dataset.location || "unspecified";
@@ -66,17 +66,20 @@
     }[action];
 
     if (contactEvent) {
-      window.fbq("trackCustom", contactEvent, parameters);
+      window.fbq("trackSingleCustom", PIXEL_ID, contactEvent, parameters);
     } else if (action === "family_request") {
-      window.fbq("trackCustom", "FamilyRequestClick", parameters);
+      // For a final CTA, wait for the last queued event before navigating.
+      window.fbq("trackSingleCustom", PIXEL_ID, "FamilyRequestClick", parameters, isFinalCTA ? undefined : eventOptions);
     }
 
     if (isFinalCTA) {
-      window.fbq("trackCustom", "FinalCTAClick", {
+      window.fbq("trackSingleCustom", PIXEL_ID, "FinalCTAClick", {
         ...parameters,
         cta_action: action || "other"
-      });
+      }, eventOptions);
     }
+
+    return Boolean(contactEvent || action === "family_request" || isFinalCTA);
   };
 
   const observeFinalCTA = () => {
@@ -93,7 +96,7 @@
       if (!visible) return;
 
       state.finalCTAViewSent = true;
-      window.fbq("trackCustom", "FinalCTAView", {
+      window.fbq("trackSingleCustom", PIXEL_ID, "FinalCTAView", {
         cta_location: visible.target.dataset.location || visible.target.id || "final_cta",
         page_language: document.documentElement.lang || "unspecified"
       });
@@ -157,8 +160,41 @@
   };
 
   document.addEventListener("click", (event) => {
-    const element = event.target.closest("[data-track]");
-    if (element) sendMetaClickEvent(element);
+    const target = event.target instanceof Element ? event.target : event.target?.parentElement;
+    const element = target?.closest("[data-track]");
+    if (!element) return;
+
+    const isLandingRequest = element.dataset.track === "family_request" &&
+      element.dataset.location?.startsWith("landing_") &&
+      element.hostname === "www.smartimateapp.com";
+    const isSameTabNavigation = !element.target || element.target.toLowerCase() === "_self";
+    const isUnmodifiedPrimaryClick = event.button === 0 &&
+      !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey;
+
+    // Give the browser Pixel time to send the click event before same-tab navigation.
+    // If consent is absent or the click opens a new tab, leave normal navigation untouched.
+    if (!isLandingRequest || !isSameTabNavigation || !isUnmodifiedPrimaryClick ||
+        !hasAdvertisingConsent() || !state.initialized || typeof window.fbq !== "function") {
+      sendMetaClickEvent(element);
+      return;
+    }
+
+    event.preventDefault();
+    let navigated = false;
+    const destination = element.href;
+    const navigate = () => {
+      if (navigated) return;
+      navigated = true;
+      window.clearTimeout(fallbackTimer);
+      window.location.assign(destination);
+    };
+    const fallbackTimer = window.setTimeout(navigate, 2200);
+    const sent = sendMetaClickEvent(element, {
+      eventCallback: navigate,
+      eventTimeout: 1800
+    });
+
+    if (!sent) navigate();
   });
 
   document.querySelectorAll("[data-advertising-consent]").forEach((button) => {
