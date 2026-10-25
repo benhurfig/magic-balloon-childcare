@@ -160,6 +160,10 @@
     updateChoiceControls();
   };
 
+  const afterClickDispatch = typeof window.queueMicrotask === "function"
+    ? window.queueMicrotask.bind(window)
+    : (callback) => window.setTimeout(callback, 0);
+
   document.addEventListener("click", (event) => {
     const target = event.target instanceof Element ? event.target : event.target?.parentElement;
     const element = target?.closest("[data-track]");
@@ -182,21 +186,24 @@
 
     event.preventDefault();
     let navigated = false;
-    const destination = element.href;
+    let fallbackTimer;
     const navigate = () => {
       if (navigated) return;
       navigated = true;
       window.clearTimeout(fallbackTimer);
-      window.location.assign(destination);
+      // Read href after every capture-phase handler has had a chance to decorate it.
+      window.location.assign(element.href);
     };
-    const fallbackTimer = window.setTimeout(navigate, 2200);
-    const sent = sendMetaClickEvent(element, {
-      eventCallback: navigate,
-      eventTimeout: 1800
-    });
+    afterClickDispatch(() => {
+      fallbackTimer = window.setTimeout(navigate, 2200);
+      const sent = sendMetaClickEvent(element, {
+        eventCallback: navigate,
+        eventTimeout: 1800
+      });
 
-    if (!sent) navigate();
-  });
+      if (!sent) navigate();
+    });
+  }, { capture: true });
 
   document.querySelectorAll("[data-advertising-consent]").forEach((button) => {
     button.addEventListener("click", () => {
