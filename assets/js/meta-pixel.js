@@ -68,15 +68,16 @@
     if (contactEvent) {
       window.fbq("trackSingleCustom", PIXEL_ID, contactEvent, parameters);
     } else if (action === "family_request") {
-      // For a final CTA, wait for the last queued event before navigating.
-      window.fbq("trackSingleCustom", PIXEL_ID, "FamilyRequestClick", parameters, isFinalCTA ? undefined : eventOptions);
+      // FamilyRequestClick is the primary conversion click and owns the
+      // navigation callback. FinalCTAClick is supplementary only.
+      window.fbq("trackSingleCustom", PIXEL_ID, "FamilyRequestClick", parameters, eventOptions);
     }
 
     if (isFinalCTA) {
       window.fbq("trackSingleCustom", PIXEL_ID, "FinalCTAClick", {
         ...parameters,
         cta_action: action || "other"
-      }, eventOptions);
+      });
     }
 
     return Boolean(contactEvent || action === "family_request" || isFinalCTA);
