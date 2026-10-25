@@ -61,5 +61,5 @@
       cta_location: element.dataset.location || undefined,
       link_url: element.getAttribute("href") || undefined
     });
-  });
+  }, { capture: true });
 })();
