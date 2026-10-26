@@ -19,6 +19,12 @@
     destination = new URL(fallback);
   }
   destination.searchParams.set("company", "magic-balloon-childcare");
+  const productionHosts = new Set(["www.magicballoonchildcare.com", "magicballoonchildcare.com"]);
+  if (productionHosts.has(window.location.hostname)) {
+    // The current site enables GA4 analytics storage on production. Prepare this
+    // handoff before click handlers run so Meta navigation does not depend on GA.
+    destination.searchParams.set("analytics_consent", "granted");
+  }
   campaignKeys.forEach((key) => {
     const value = incoming.get(key);
     if (value && value.length <= 1000) destination.searchParams.set(key, value);
@@ -34,7 +40,6 @@
 
   // Local/preview hosts never send test visits to the client's live GA4 property.
   // On the official site reuse BOTH existing scripts, unchanged and once each.
-  const productionHosts = new Set(["www.magicballoonchildcare.com", "magicballoonchildcare.com"]);
   const loadExistingScript = (src, callback) => {
     if (document.querySelector(`script[data-landing-analytics="${src}"]`)) return;
     const script = document.createElement("script");
